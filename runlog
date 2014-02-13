@@ -1,0 +1,87 @@
+           0 is at the radial distance   6.00000000     Rj.
+           1 is at the radial distance   6.06382990     Rj.
+           2 is at the radial distance   6.12765980     Rj.
+           3 is at the radial distance   6.19148922     Rj.
+           4 is at the radial distance   6.25531912     Rj.
+           5 is at the radial distance   6.31914902     Rj.
+           6 is at the radial distance   6.38297892     Rj.
+           7 is at the radial distance   6.44680834     Rj.
+           8 is at the radial distance   6.51063824     Rj.
+           9 is at the radial distance   6.57446814     Rj.
+          10 is at the radial distance   6.63829803     Rj.
+          11 is at the radial distance   6.70212746     Rj.
+          12 is at the radial distance   6.76595736     Rj.
+          13 is at the radial distance   6.82978725     Rj.
+          14 is at the radial distance   6.89361715     Rj.
+          15 is at the radial distance   6.95744705     Rj.
+          16 is at the radial distance   7.02127647     Rj.
+          17 is at the radial distance   7.08510637     Rj.
+          18 is at the radial distance   7.14893627     Rj.
+          19 is at the radial distance   7.21276569     Rj.
+          20 is at the radial distance   7.27659559     Rj.
+          21 is at the radial distance   7.34042549     Rj.
+          22 is at the radial distance   7.40425539     Rj.
+          23 is at the radial distance   7.46808529     Rj.
+          24 is at the radial distance   7.53191471     Rj.
+          25 is at the radial distance   7.59574461     Rj.
+          26 is at the radial distance   7.65957451     Rj.
+          27 is at the radial distance   7.72340441     Rj.
+          28 is at the radial distance   7.78723431     Rj.
+          29 is at the radial distance   7.85106373     Rj.
+          30 is at the radial distance   7.91489363     Rj.
+          31 is at the radial distance   7.97872353     Rj.
+          32 is at the radial distance   8.04255295     Rj.
+          33 is at the radial distance   8.10638332     Rj.
+          34 is at the radial distance   8.17021275     Rj.
+          35 is at the radial distance   8.23404312     Rj.
+          36 is at the radial distance   8.29787254     Rj.
+          37 is at the radial distance   8.36170197     Rj.
+          38 is at the radial distance   8.42553139     Rj.
+          39 is at the radial distance   8.48936176     Rj.
+          40 is at the radial distance   8.55319118     Rj.
+          41 is at the radial distance   8.61702156     Rj.
+          42 is at the radial distance   8.68085098     Rj.
+          43 is at the radial distance   8.74468040     Rj.
+          44 is at the radial distance   8.80851078     Rj.
+          45 is at the radial distance   8.87234020     Rj.
+          46 is at the radial distance   8.93617058     Rj.
+          47 is at the radial distance   9.00000000     Rj.
+ AVERAGE VALUES
+ $$--------------------------------
+ $$ INPUT PARAMETERS
+ $$--------------------------------
+ $$ Source Rate..........   6272455.50    
+ $$ Hot Elec Fraction....   2.49999994E-03
+ $$ Transport............   28.0000000    
+ $$ Hot Elec Temp........   42.0000000    
+ $$ Subcorotation........  0.500000000    
+ $$ Sys 3 Hot Elec Frac..  0.300000012    
+ $$ Sys 4 Hot Elec Amp...  0.300000012    
+ $$ Sys 4 Speed..........   1.04999995    
+ 
+ $$ GAUSSIAN SOURCE CHANGE VARIABLES
+ $$ Neutral Variation....   0.00000000    
+ $$ Neutral Temp.........   249.000000    
+ $$ Variation Duration...   25.0000000    
+ $$ Hot Elec Variation...   0.00000000    
+ $$ Hot Elec Temp........   269.000000    
+ $$ Variation Duration...   45.5000000    
+ 
+ $$ Run Length(days)....   150.000000    
+ $$ Outputs per day.....   1.00000000    
+ 
+ $$--------------------------------
+ $$ IN-CODE ENERGY BUDGET
+ $$--------------------------------
+ $$ ionized S............  0.508079290    
+ $$ ionized O............  0.175348252    
+ $$ charge exchange S....  0.236079782    
+ $$ charge exchange O....  0.445730835    
+ $$ equil with ehot......   9.74737930    
+ $$ total in.............   11.1126175    
+ $$ puv..................   11.0273790    
+ $$ fast/ena.............   1.13230991    
+ $$ transport............   2.07696891    
+ $$ total out............   14.2366581    
+ $$ in/out...............  0.780563653    
+ 
