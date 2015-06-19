@@ -1,0 +1,81 @@
+#!/bin/bash
+
+FILE='test'
+FILELIST='list.dat'
+PREFIX=$2
+DENS="DENS"
+TEMP="TEMP"
+NL2_="NL2_"
+DIR='/home/mrcopper/Desktop/Project/2D_Model/plots/data'
+OBSDIR='/home/mrcopper/Desktop/Project/2D_Model/plots/Observations'
+
+echo '' > $FILELIST
+
+echo 'set terminal jpeg'                                      >$FILE
+echo 'set logscale y'                                        >>$FILE
+echo 'set key below'                                         >>$FILE
+echo 'set size 1, 1'                                         >>$FILE
+echo "set xlabel 'Radial Distance(Rj)'"                      >>$FILE
+echo "set ylabel '$PREFIX'"                                  >>$FILE
+if [ $PREFIX = $DENS ]
+  then
+  echo "set yrange [0.1:10000]"                                    >>$FILE
+fi
+echo "set xrange [6.0:15.0]"                                  >>$FILE
+echo "set xtics 1.0"                                          >>$FILE
+#echo "set ytics .10"                                         >>$FILE
+echo "set grid ytics"                                        >>$FILE
+echo "set grid xtics"                                        >>$FILE
+ # echo "set yrange [0:2000]"                                    >>$FILE
+
+#if [ $2 -eq "DENS" ]
+#then
+#  echo "This part works"
+#  echo "set yrange [0:500]"                                    >>$FILE
+#  echo "set ytics 50"                                         >>$FILE
+#fi
+
+options='with lines'
+
+for i in $(seq 1 $1)
+do
+  
+  if [ "$i" -lt 10 ]
+  then   
+    echo "set title 'Temporal Variability of Flux Tube Content (00$i)'" >>$FILE
+    echo "set output 'gplot00$i.jpeg'" >> $FILE  
+    echo "gplot00$i.jpeg" >> $FILELIST  
+  
+    echo "plot '"$DIR"/"$PREFIX"/"$PREFIX"000"$i"rad.dat'  "$options" title 'Misc Value'   "  >> $FILE
+
+  else
+    if [ "$i" -lt 100 ] 
+    then
+      echo "set title 'Temporal Variability of Flux Tube Content (0$i)'" >>$FILE
+      echo "set output 'gplot0$i.jpeg'" >> $FILE  
+      echo "gplot0$i.jpeg" >> $FILELIST  
+  
+      echo "plot '"$DIR"/"$PREFIX"/"$PREFIX"00"$i"rad.dat'  "$options" title 'Misc Value'   "  >> $FILE
+
+      else
+        echo "set title 'Temporal Variability of Flux Tube Content ($i)'" >>$FILE
+        echo "set output 'gplot$i.jpeg'" >> $FILE  
+        echo "gplot$i.jpeg" >> $FILELIST  
+      
+        echo "plot '"$DIR"/"$PREFIX"/"$PREFIX"0"$i"rad.dat'  "$options" title 'Misc Value'   "  >> $FILE
+      fi
+  fi
+
+
+done
+
+gnuplot $FILE
+
+#convert -delay 10 gplot* animated.gif
+mencoder -nosound -really-quiet -ovc lavc -lavcopts \
+  vcodec=mpeg4:mbd=2:trell:autoaspect:vqscale=3 \
+  -vf scale=768:432 -mf type=jpeg:fps=10 \
+  mf://@list.dat -o misc.mpeg
+
+rm gplot*.jpeg
+#rm list.dat

@@ -1,0 +1,39 @@
+ AVERAGE VALUES
+ $$--------------------------------
+ $$ INPUT PARAMETERS
+ $$--------------------------------
+ $$ Source Rate..........  4.9999997E+27
+ $$ Hot Elec Fraction....  1.0000000E-03
+ $$ Transport............  0.0000000E+00
+ $$ Hot Elec Temp........   42.00000    
+ $$ Subcorotation........  0.0000000E+00
+ $$ Sys 3 Hot Elec Frac..  0.3000000    
+ $$ Sys 4 Hot Elec Amp...  0.0000000E+00
+ $$ Sys 4 Speed..........   1.050000    
+ 
+ $$ GAUSSIAN SOURCE CHANGE VARIABLES
+ $$ Neutral Variation....  0.0000000E+00
+ $$ Neutral Temp.........   249.0000    
+ $$ Variation Duration...   25.00000    
+ $$ Hot Elec Variation...  0.0000000E+00
+ $$ Hot Elec Temp........   269.0000    
+ $$ Variation Duration...   45.50000    
+ 
+ $$ Run Length(days)....   100.0000    
+ $$ Outputs per day.....   1.000000    
+ 
+ $$--------------------------------
+ $$ IN-CODE ENERGY BUDGET
+ $$--------------------------------
+ $$ ionized S............  0.1084586    
+ $$ ionized O............  2.9775878E-02
+ $$ charge exchange S....  7.0639461E-02
+ $$ charge exchange O....  9.5175207E-02
+ $$ equil with ehot...... -2.2655385E-02
+ $$ total in.............  0.2813937    
+ $$ puv..................  7.9453386E-02
+ $$ fast/ena.............  6.9560312E-02
+ $$ transport............   1.177577    
+ $$ total out............   1.326591    
+ $$ in/out...............  0.2121179    
+ 

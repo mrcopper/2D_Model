@@ -1,0 +1,173 @@
+#!/bin/bash
+
+FILE='test'
+FILELIST='list.dat'
+PREFIX=$2
+DENS="DENS"
+TEMP="TEMP"
+NL2_="NL2_"
+DIR=$3
+OBSDIR='/home/mrcopper/Desktop/Project/2D_Model/plots/Observations'
+
+echo '' > $FILELIST
+
+echo 'set terminal jpeg'                                      >$FILE
+echo 'set logscale y'                                        >>$FILE
+echo 'set key below'                                         >>$FILE
+echo 'set size 1, 1'                                         >>$FILE
+echo "set xlabel 'Radial Distance(Rj)'"                      >>$FILE
+echo "set ylabel '$PREFIX'"                                  >>$FILE
+echo "set xrange [6.0:15.0]"                                  >>$FILE
+if [ $PREFIX = $DENS ]
+  then
+  echo "set yrange [0.1:10000]"                                    >>$FILE
+fi
+if [ $PREFIX = $TEMP ]
+  then
+  echo "set xrange [6.0:9.0]"                                    >>$FILE
+fi
+echo "set xtics 1.0"                                          >>$FILE
+#echo "set ytics .10"                                         >>$FILE
+echo "set grid ytics"                                        >>$FILE
+echo "set grid xtics"                                        >>$FILE
+ # echo "set yrange [0:2000]"                                    >>$FILE
+
+#if [ $2 -eq "DENS" ]
+#then
+#  echo "This part works"
+#  echo "set yrange [0:500]"                                    >>$FILE
+#  echo "set ytics 50"                                         >>$FILE
+#fi
+
+options='with lines'
+
+for i in $(seq 1 $1)
+do
+  
+  if [ "$i" -lt 10 ]
+  then   
+    echo "set title 'Temporal Variability of Flux Tube Content (00$i)'" >>$FILE
+    echo "set output 'gplot00$i.jpeg'" >> $FILE  
+    echo "gplot00$i.jpeg" >> $FILELIST  
+  
+    echo "plot '"$DIR"/sp/"$PREFIX"/"$PREFIX"sp000"$i"rad.dat'  "$options" title 'Sulfur + (II)'  , " '\' >> $FILE
+    echo "     '"$DIR"/s2p/"$PREFIX"/"$PREFIX"s2p000"$i"rad.dat' "$options" title 'Sulfur ++ (III)', " '\' >> $FILE
+    echo "     '"$DIR"/s3p/"$PREFIX"/"$PREFIX"s3p000"$i"rad.dat' "$options" title 'Sulfur +++ (IV)', " '\' >> $FILE
+    echo "     '"$DIR"/op/"$PREFIX"/"$PREFIX"op000"$i"rad.dat'  "$options" title 'Oxygen + (II)'  , " '\' >> $FILE
+#    echo "     '"$DIR"/o2p/"$PREFIX"/"$PREFIX"o2p000"$i"rad.dat' "$options" title 'Oxygen ++ (III)' "  >> $FILE
+    if [ $PREFIX = $DENS ] 
+    then
+      echo "     '"$DIR"/o2p/"$PREFIX"/"$PREFIX"o2p000"$i"rad.dat' "$options" title 'Oxygen ++ (III)', " '\' >> $FILE
+      echo "     '"$DIR"/elec/"$PREFIX"/"$PREFIX"elec000"$i"rad.dat' "$options" title 'Electrons',       "    '\' >> $FILE
+      echo "     '"$DIR"/LOAD/LOAD000"$i"rad.dat' "$options" title 'Mass Loading', " '\' >> $FILE
+      echo "     '"$OBSDIR"/ElecDens.dat' title 'Electron Observation'"                                         >> $FILE
+    else
+      if [ $PREFIX = $NL2_ ]
+      then
+        echo "     '"$DIR"/o2p/"$PREFIX"/"$PREFIX"o2p000"$i"rad.dat' "$options" title 'Oxygen ++ (III)', " '\' >> $FILE
+        echo "     '"$DIR"/elec/"$PREFIX"/"$PREFIX"elec000"$i"rad.dat' "$options" title 'Total',       "  '\'   >> $FILE
+        echo "     '"$OBSDIR"/nl2.dat' title 'Observed'"                                                                    >> $FILE
+      else
+        if [ $PREFIX = $TEMP ]
+        then
+          echo "     '"$DIR"/o2p/"$PREFIX"/"$PREFIX"o2p000"$i"rad.dat' "$options" title 'Oxygen ++ (III)', " '\' >> $FILE
+          echo "     '"$DIR"/elec/"$PREFIX"/"$PREFIX"elec000"$i"rad.dat' "$options" title 'Electrons'       "     >> $FILE
+        #  echo "     '"$DIR"/o2p/"$PREFIX"/"$PREFIX"o2p000"$i"rad.dat' "$options" title 'Oxygen ++ (III)' "  >> $FILE
+#          echo "     '"$ERRDIR"/
+        else
+          echo "     '"$DIR"/o2p/"$PREFIX"/"$PREFIX"o2p000"$i"rad.dat' "$options" title 'Oxygen ++ (III)' "  >> $FILE
+#         echo "     '"$DIR"/LOAD/LOAD000"$i"rad.dat' "$options" title 'Mass Loading' "  >> $FILE
+        fi
+      fi 
+    fi
+
+  else
+    if [ "$i" -lt 100 ] 
+    then
+      echo "set title 'Temporal Variability of Flux Tube Content (0$i)'" >>$FILE
+      echo "set output 'gplot0$i.jpeg'" >> $FILE  
+      echo "gplot0$i.jpeg" >> $FILELIST  
+  
+      echo "plot '"$DIR"/sp/"$PREFIX"/"$PREFIX"sp00"$i"rad.dat'  "$options" title 'Sulfur + (II)'  , " '\' >> $FILE
+      echo "     '"$DIR"/s2p/"$PREFIX"/"$PREFIX"s2p00"$i"rad.dat' "$options" title 'Sulfur ++ (III)', " '\' >> $FILE
+      echo "     '"$DIR"/s3p/"$PREFIX"/"$PREFIX"s3p00"$i"rad.dat' "$options" title 'Sulfur +++ (IV)', " '\' >> $FILE
+      echo "     '"$DIR"/op/"$PREFIX"/"$PREFIX"op00"$i"rad.dat'  "$options" title 'Oxygen + (II)'  , " '\' >> $FILE
+#      echo "     '"$DIR"/o2p/"$PREFIX"/"$PREFIX"o2p00"$i"rad.dat' "$options" title 'Oxygen ++ (III)' "  >> $FILE
+      if [ $PREFIX = $DENS ] 
+      then
+        echo "     '"$DIR"/o2p/"$PREFIX"/"$PREFIX"o2p00"$i"rad.dat' "$options" title 'Oxygen ++ (III)', " '\' >> $FILE
+        echo "     '"$DIR"/elec/"$PREFIX"/"$PREFIX"elec00"$i"rad.dat' "$options" title 'Electrons',       "    '\' >> $FILE
+        echo "     '"$DIR"/LOAD/LOAD00"$i"rad.dat' "$options" title 'Mass Loading', " '\'  >> $FILE
+        echo "     '"$OBSDIR"/ElecDens.dat' title 'Electron Observation'"                                         >> $FILE
+      else
+        if [ $PREFIX = $NL2_ ]
+        then
+          echo "     '"$DIR"/o2p/"$PREFIX"/"$PREFIX"o2p00"$i"rad.dat' "$options" title 'Oxygen ++ (III)', " '\' >> $FILE
+          echo "     '"$DIR"/elec/"$PREFIX"/"$PREFIX"elec00"$i"rad.dat' "$options" title 'Total',         " '\' >> $FILE
+          echo "     '"$OBSDIR"/nl2.dat' title 'Obsererved'"                                                    >> $FILE
+        else
+          if [ $PREFIX = $TEMP ]
+          then
+            #echo "     '"$DIR"/o2p/"$PREFIX"/"$PREFIX"o2p00"$i"rad.dat' "$options" title 'Oxygen ++ (III)' "  >> $FILE
+            echo "     '"$DIR"/o2p/"$PREFIX"/"$PREFIX"o2p00"$i"rad.dat' "$options" title 'Oxygen ++ (III)', " '\' >> $FILE
+            echo "     '"$DIR"/elec/"$PREFIX"/"$PREFIX"elec00"$i"rad.dat' "$options" title 'Electrons'       "     >> $FILE
+#            echo "     '"$ERRDIR"/
+          else
+            echo "     '"$DIR"/o2p/"$PREFIX"/"$PREFIX"o2p00"$i"rad.dat' "$options" title 'Oxygen ++ (III)' "  >> $FILE
+#           echo "     '"$DIR"/LOAD/LOAD000"$i"rad.dat' "$options" title 'Mass Loading' "  >> $FILE
+          fi
+        fi 
+      fi
+
+
+      else
+        echo "set title 'Temporal Variability of Flux Tube Content ($i)'" >>$FILE
+        echo "set output 'gplot$i.jpeg'" >> $FILE  
+        echo "gplot$i.jpeg" >> $FILELIST  
+      
+        echo "plot '"$DIR"/sp/"$PREFIX"/"$PREFIX"sp0"$i"rad.dat'  "$options" title 'Sulfur + (II)',   " '\' >> $FILE
+        echo "     '"$DIR"/s2p/"$PREFIX"/"$PREFIX"s2p0"$i"rad.dat' "$options" title 'Sulfur ++ (III)', " '\' >> $FILE
+        echo "     '"$DIR"/s3p/"$PREFIX"/"$PREFIX"s3p0"$i"rad.dat' "$options" title 'Sulfur +++ (IV)', " '\' >> $FILE
+        echo "     '"$DIR"/op/"$PREFIX"/"$PREFIX"op0"$i"rad.dat'  "$options" title 'Oxygen + (II)',   " '\' >> $FILE
+  #      echo "     '"$DIR"/o2p/"$PREFIX"/"$PREFIX"o2p0"$i"rad.dat' "$options" title 'Oxygen ++ (III)' "  >> $FILE
+        if [ $PREFIX = $DENS ] 
+        then
+          echo "     '"$DIR"/o2p/"$PREFIX"/"$PREFIX"o2p0"$i"rad.dat' "$options" title 'Oxygen ++ (III)', " '\' >> $FILE
+          echo "     '"$DIR"/elec/"$PREFIX"/"$PREFIX"elec0"$i"rad.dat' "$options" title 'Electrons',       "    '\' >> $FILE
+          echo "     '"$DIR"/LOAD/LOAD0"$i"rad.dat' "$options" title 'Mass Loading', " '\' >> $FILE
+          echo "     '"$OBSDIR"/ElecDens.dat' title 'Electron Observation'"                                         >> $FILE
+          else
+            if [ $PREFIX = $NL2_ ]
+            then
+              echo "     '"$DIR"/o2p/"$PREFIX"/"$PREFIX"o2p0"$i"rad.dat' "$options" title 'Oxygen ++ (III)', " '\' >> $FILE
+              echo "     '"$DIR"/elec/"$PREFIX"/"$PREFIX"elec0"$i"rad.dat' "$options" title 'Total',         " '\' >> $FILE
+              echo "     '"$OBSDIR"/nl2.dat' title 'Obsererved'"                                                   >> $FILE
+            else
+          if [ $PREFIX = $TEMP ]
+          then
+            #echo "     '"$DIR"/o2p/"$PREFIX"/"$PREFIX"o2p0"$i"rad.dat' "$options" title 'Oxygen ++ (III)' "  >> $FILE
+            echo "     '"$DIR"/o2p/"$PREFIX"/"$PREFIX"o2p0"$i"rad.dat' "$options" title 'Oxygen ++ (III)', " '\' >> $FILE
+            echo "     '"$DIR"/elec/"$PREFIX"/"$PREFIX"elec0"$i"rad.dat' "$options" title 'Electrons'       "     >> $FILE
+#            echo "     '"$ERRDIR"/
+          else
+            echo "     '"$DIR"/o2p/"$PREFIX"/"$PREFIX"o2p0"$i"rad.dat' "$options" title 'Oxygen ++ (III)' "  >> $FILE
+#           echo "     '"$DIR"/LOAD/LOAD000"$i"rad.dat' "$options" title 'Mass Loading' "  >> $FILE
+          fi
+            fi 
+          fi
+      fi
+  fi
+
+
+done
+
+gnuplot $FILE
+
+#convert -delay 10 gplot* animated.gif
+mencoder -nosound -really-quiet -ovc lavc -lavcopts \
+  vcodec=mpeg4:mbd=2:trell:autoaspect:vqscale=3 \
+  -vf scale=768:432 -mf type=jpeg:fps=10 \
+  mf://@list.dat -o animated.mpeg
+
+rm gplot*.jpeg
+#rm list.dat

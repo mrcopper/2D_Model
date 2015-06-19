@@ -1,7 +1,9 @@
-COMP=mpif90
-FLAGS=-g -O4 -Ofast
-OBJECTS=functions.o debug.o reactions.o varTypes.o global.o cfit.o rrfit.o dielectronic.o timeStep.o readEmis.o inputs.o ftmix.o para.o output.o
-MODS=functions.mod debug.mod reactions.mod vartypes.mod global.mod fitc.mod fitr.mod dielectronic.mod timeStep.mod readEmis.mod inputs.mod ftmix.mod para.mod output.mod
+COMP=mpiifort
+FLAGS=-O4
+OBJECTS=functions.o debug.o reactions.o varTypes.o global.o cfit.o rrfit.o dielectronic.o \
+  timeStep.o readEmis.o inputs.o ftmix.o para.o output.o diffusion.o dimensions.o
+MODS=functions.mod debug.mod reactions.mod vartypes.mod global.mod fitc.mod fitr.mod dielectronic.mod \
+  timeStep.mod readEmis.mod inputs.mod ftmix.mod para.mod output.mod diffusion.mod dimensions.mod
 EXE= torus
 
 all: onebox
@@ -30,7 +32,7 @@ para.o: varTypes.o
 debug.o: varTypes.o
 	$(COMP) $(FLAGS) -c debug.f90
 
-varTypes.o: 
+varTypes.o: dimensions.o
 	$(COMP) $(FLAGS) -c varTypes.f90
 
 reactions.o:
@@ -51,6 +53,14 @@ dielectronic.o: para.o
 output.o:
 	$(COMP) $(FLAGS) -c output.f90
 
+diffusion.o:
+	$(COMP) $(FLAGS) -c diffusion.f90
+
+dimensions.o:
+	$(COMP) $(FLAGS) -c dimensions.f90
+
 clean:
 	\rm *.o *.mod $(EXE)
 
+try: all
+	\rm *.o *.mod $(EXE)

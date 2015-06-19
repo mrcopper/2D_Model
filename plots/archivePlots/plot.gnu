@@ -1,0 +1,35 @@
+set terminal jpeg
+set output 'chi.jpeg'
+set pm3d map
+set pm3d interpolate 16, 16
+set pm3d flush begin noftriangle scansforward
+set xrange [3.0e-7:18.0e-7]
+set format x "%G"
+set xlabel 'Diffusion Coefficient'
+set ylabel 'Source Rate'
+set zlabel 'Chi Squared'
+set cblabel 'Chi Squared'
+set title 'Sulfur +'
+set output 'sp.jpeg'
+splot 'sp.dat'
+set title 'Sulfur ++'
+set output 's2p.jpeg'
+splot 's2p.dat'
+set title 'Sulfur +++'
+set output 's3p.jpeg'
+splot 's3p.dat'
+set title 'Oxygen +'
+set output 'op.jpeg'
+splot 'op.dat'
+set title 'Oxygen ++'
+set output 'o2p.jpeg'
+splot 'o2p.dat'
+set title 'Electron Density'
+set output 'elecDens.jpeg'
+splot 'elecDens.dat'
+set title 'Electron Temp'
+set output 'elecTemp.jpeg'
+splot 'elecTemp.dat'
+set title 'Column Integrated Density'
+set output 'NL2.jpeg'
+splot 'NL2.dat'

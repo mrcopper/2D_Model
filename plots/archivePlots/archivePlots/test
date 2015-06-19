@@ -1,0 +1,1810 @@
+set terminal jpeg
+set logscale y
+set key below
+set size 1, 1
+set xlabel 'Radial Distance(Rj)'
+set ylabel 'NL2_'
+set xrange [6.0:15.0]
+set xtics 1.0
+set grid ytics
+set grid xtics
+set title 'Temporal Variability of Flux Tube Content (001)'
+set output 'gplot001.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0001rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0001rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0001rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0001rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0001rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0001rad.dat' with lines title 'Total',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Observed'
+set title 'Temporal Variability of Flux Tube Content (002)'
+set output 'gplot002.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0002rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0002rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0002rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0002rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0002rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0002rad.dat' with lines title 'Total',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Observed'
+set title 'Temporal Variability of Flux Tube Content (003)'
+set output 'gplot003.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0003rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0003rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0003rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0003rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0003rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0003rad.dat' with lines title 'Total',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Observed'
+set title 'Temporal Variability of Flux Tube Content (004)'
+set output 'gplot004.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0004rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0004rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0004rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0004rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0004rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0004rad.dat' with lines title 'Total',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Observed'
+set title 'Temporal Variability of Flux Tube Content (005)'
+set output 'gplot005.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0005rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0005rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0005rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0005rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0005rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0005rad.dat' with lines title 'Total',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Observed'
+set title 'Temporal Variability of Flux Tube Content (006)'
+set output 'gplot006.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0006rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0006rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0006rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0006rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0006rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0006rad.dat' with lines title 'Total',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Observed'
+set title 'Temporal Variability of Flux Tube Content (007)'
+set output 'gplot007.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0007rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0007rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0007rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0007rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0007rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0007rad.dat' with lines title 'Total',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Observed'
+set title 'Temporal Variability of Flux Tube Content (008)'
+set output 'gplot008.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0008rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0008rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0008rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0008rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0008rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0008rad.dat' with lines title 'Total',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Observed'
+set title 'Temporal Variability of Flux Tube Content (009)'
+set output 'gplot009.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0009rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0009rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0009rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0009rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0009rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0009rad.dat' with lines title 'Total',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Observed'
+set title 'Temporal Variability of Flux Tube Content (010)'
+set output 'gplot010.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0010rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0010rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0010rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0010rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0010rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0010rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (011)'
+set output 'gplot011.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0011rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0011rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0011rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0011rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0011rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0011rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (012)'
+set output 'gplot012.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0012rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0012rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0012rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0012rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0012rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0012rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (013)'
+set output 'gplot013.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0013rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0013rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0013rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0013rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0013rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0013rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (014)'
+set output 'gplot014.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0014rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0014rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0014rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0014rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0014rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0014rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (015)'
+set output 'gplot015.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0015rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0015rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0015rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0015rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0015rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0015rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (016)'
+set output 'gplot016.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0016rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0016rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0016rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0016rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0016rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0016rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (017)'
+set output 'gplot017.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0017rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0017rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0017rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0017rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0017rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0017rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (018)'
+set output 'gplot018.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0018rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0018rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0018rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0018rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0018rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0018rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (019)'
+set output 'gplot019.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0019rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0019rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0019rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0019rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0019rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0019rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (020)'
+set output 'gplot020.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0020rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0020rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0020rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0020rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0020rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0020rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (021)'
+set output 'gplot021.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0021rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0021rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0021rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0021rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0021rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0021rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (022)'
+set output 'gplot022.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0022rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0022rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0022rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0022rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0022rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0022rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (023)'
+set output 'gplot023.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0023rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0023rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0023rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0023rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0023rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0023rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (024)'
+set output 'gplot024.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0024rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0024rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0024rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0024rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0024rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0024rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (025)'
+set output 'gplot025.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0025rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0025rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0025rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0025rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0025rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0025rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (026)'
+set output 'gplot026.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0026rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0026rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0026rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0026rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0026rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0026rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (027)'
+set output 'gplot027.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0027rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0027rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0027rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0027rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0027rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0027rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (028)'
+set output 'gplot028.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0028rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0028rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0028rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0028rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0028rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0028rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (029)'
+set output 'gplot029.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0029rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0029rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0029rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0029rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0029rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0029rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (030)'
+set output 'gplot030.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0030rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0030rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0030rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0030rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0030rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0030rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (031)'
+set output 'gplot031.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0031rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0031rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0031rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0031rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0031rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0031rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (032)'
+set output 'gplot032.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0032rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0032rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0032rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0032rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0032rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0032rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (033)'
+set output 'gplot033.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0033rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0033rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0033rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0033rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0033rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0033rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (034)'
+set output 'gplot034.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0034rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0034rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0034rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0034rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0034rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0034rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (035)'
+set output 'gplot035.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0035rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0035rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0035rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0035rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0035rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0035rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (036)'
+set output 'gplot036.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0036rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0036rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0036rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0036rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0036rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0036rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (037)'
+set output 'gplot037.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0037rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0037rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0037rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0037rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0037rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0037rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (038)'
+set output 'gplot038.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0038rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0038rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0038rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0038rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0038rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0038rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (039)'
+set output 'gplot039.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0039rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0039rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0039rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0039rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0039rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0039rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (040)'
+set output 'gplot040.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0040rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0040rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0040rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0040rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0040rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0040rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (041)'
+set output 'gplot041.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0041rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0041rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0041rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0041rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0041rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0041rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (042)'
+set output 'gplot042.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0042rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0042rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0042rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0042rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0042rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0042rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (043)'
+set output 'gplot043.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0043rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0043rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0043rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0043rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0043rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0043rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (044)'
+set output 'gplot044.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0044rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0044rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0044rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0044rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0044rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0044rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (045)'
+set output 'gplot045.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0045rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0045rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0045rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0045rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0045rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0045rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (046)'
+set output 'gplot046.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0046rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0046rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0046rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0046rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0046rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0046rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (047)'
+set output 'gplot047.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0047rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0047rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0047rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0047rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0047rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0047rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (048)'
+set output 'gplot048.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0048rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0048rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0048rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0048rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0048rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0048rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (049)'
+set output 'gplot049.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0049rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0049rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0049rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0049rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0049rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0049rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (050)'
+set output 'gplot050.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0050rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0050rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0050rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0050rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0050rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0050rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (051)'
+set output 'gplot051.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0051rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0051rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0051rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0051rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0051rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0051rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (052)'
+set output 'gplot052.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0052rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0052rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0052rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0052rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0052rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0052rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (053)'
+set output 'gplot053.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0053rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0053rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0053rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0053rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0053rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0053rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (054)'
+set output 'gplot054.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0054rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0054rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0054rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0054rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0054rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0054rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (055)'
+set output 'gplot055.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0055rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0055rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0055rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0055rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0055rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0055rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (056)'
+set output 'gplot056.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0056rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0056rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0056rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0056rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0056rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0056rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (057)'
+set output 'gplot057.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0057rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0057rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0057rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0057rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0057rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0057rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (058)'
+set output 'gplot058.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0058rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0058rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0058rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0058rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0058rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0058rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (059)'
+set output 'gplot059.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0059rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0059rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0059rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0059rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0059rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0059rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (060)'
+set output 'gplot060.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0060rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0060rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0060rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0060rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0060rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0060rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (061)'
+set output 'gplot061.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0061rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0061rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0061rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0061rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0061rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0061rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (062)'
+set output 'gplot062.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0062rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0062rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0062rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0062rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0062rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0062rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (063)'
+set output 'gplot063.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0063rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0063rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0063rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0063rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0063rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0063rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (064)'
+set output 'gplot064.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0064rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0064rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0064rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0064rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0064rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0064rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (065)'
+set output 'gplot065.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0065rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0065rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0065rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0065rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0065rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0065rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (066)'
+set output 'gplot066.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0066rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0066rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0066rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0066rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0066rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0066rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (067)'
+set output 'gplot067.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0067rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0067rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0067rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0067rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0067rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0067rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (068)'
+set output 'gplot068.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0068rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0068rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0068rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0068rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0068rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0068rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (069)'
+set output 'gplot069.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0069rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0069rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0069rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0069rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0069rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0069rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (070)'
+set output 'gplot070.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0070rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0070rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0070rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0070rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0070rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0070rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (071)'
+set output 'gplot071.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0071rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0071rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0071rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0071rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0071rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0071rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (072)'
+set output 'gplot072.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0072rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0072rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0072rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0072rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0072rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0072rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (073)'
+set output 'gplot073.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0073rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0073rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0073rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0073rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0073rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0073rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (074)'
+set output 'gplot074.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0074rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0074rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0074rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0074rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0074rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0074rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (075)'
+set output 'gplot075.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0075rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0075rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0075rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0075rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0075rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0075rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (076)'
+set output 'gplot076.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0076rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0076rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0076rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0076rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0076rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0076rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (077)'
+set output 'gplot077.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0077rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0077rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0077rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0077rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0077rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0077rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (078)'
+set output 'gplot078.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0078rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0078rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0078rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0078rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0078rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0078rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (079)'
+set output 'gplot079.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0079rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0079rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0079rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0079rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0079rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0079rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (080)'
+set output 'gplot080.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0080rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0080rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0080rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0080rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0080rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0080rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (081)'
+set output 'gplot081.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0081rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0081rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0081rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0081rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0081rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0081rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (082)'
+set output 'gplot082.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0082rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0082rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0082rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0082rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0082rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0082rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (083)'
+set output 'gplot083.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0083rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0083rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0083rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0083rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0083rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0083rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (084)'
+set output 'gplot084.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0084rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0084rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0084rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0084rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0084rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0084rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (085)'
+set output 'gplot085.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0085rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0085rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0085rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0085rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0085rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0085rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (086)'
+set output 'gplot086.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0086rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0086rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0086rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0086rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0086rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0086rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (087)'
+set output 'gplot087.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0087rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0087rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0087rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0087rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0087rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0087rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (088)'
+set output 'gplot088.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0088rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0088rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0088rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0088rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0088rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0088rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (089)'
+set output 'gplot089.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0089rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0089rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0089rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0089rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0089rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0089rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (090)'
+set output 'gplot090.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0090rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0090rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0090rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0090rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0090rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0090rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (091)'
+set output 'gplot091.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0091rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0091rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0091rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0091rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0091rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0091rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (092)'
+set output 'gplot092.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0092rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0092rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0092rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0092rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0092rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0092rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (093)'
+set output 'gplot093.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0093rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0093rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0093rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0093rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0093rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0093rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (094)'
+set output 'gplot094.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0094rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0094rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0094rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0094rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0094rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0094rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (095)'
+set output 'gplot095.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0095rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0095rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0095rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0095rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0095rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0095rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (096)'
+set output 'gplot096.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0096rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0096rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0096rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0096rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0096rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0096rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (097)'
+set output 'gplot097.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0097rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0097rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0097rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0097rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0097rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0097rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (098)'
+set output 'gplot098.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0098rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0098rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0098rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0098rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0098rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0098rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (099)'
+set output 'gplot099.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0099rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0099rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0099rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0099rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0099rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0099rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (100)'
+set output 'gplot100.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0100rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0100rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0100rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0100rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0100rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0100rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (101)'
+set output 'gplot101.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0101rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0101rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0101rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0101rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0101rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0101rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (102)'
+set output 'gplot102.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0102rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0102rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0102rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0102rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0102rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0102rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (103)'
+set output 'gplot103.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0103rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0103rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0103rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0103rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0103rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0103rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (104)'
+set output 'gplot104.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0104rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0104rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0104rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0104rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0104rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0104rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (105)'
+set output 'gplot105.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0105rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0105rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0105rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0105rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0105rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0105rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (106)'
+set output 'gplot106.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0106rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0106rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0106rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0106rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0106rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0106rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (107)'
+set output 'gplot107.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0107rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0107rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0107rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0107rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0107rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0107rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (108)'
+set output 'gplot108.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0108rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0108rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0108rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0108rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0108rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0108rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (109)'
+set output 'gplot109.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0109rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0109rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0109rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0109rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0109rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0109rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (110)'
+set output 'gplot110.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0110rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0110rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0110rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0110rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0110rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0110rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (111)'
+set output 'gplot111.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0111rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0111rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0111rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0111rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0111rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0111rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (112)'
+set output 'gplot112.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0112rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0112rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0112rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0112rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0112rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0112rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (113)'
+set output 'gplot113.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0113rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0113rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0113rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0113rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0113rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0113rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (114)'
+set output 'gplot114.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0114rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0114rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0114rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0114rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0114rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0114rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (115)'
+set output 'gplot115.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0115rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0115rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0115rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0115rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0115rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0115rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (116)'
+set output 'gplot116.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0116rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0116rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0116rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0116rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0116rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0116rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (117)'
+set output 'gplot117.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0117rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0117rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0117rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0117rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0117rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0117rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (118)'
+set output 'gplot118.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0118rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0118rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0118rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0118rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0118rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0118rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (119)'
+set output 'gplot119.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0119rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0119rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0119rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0119rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0119rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0119rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (120)'
+set output 'gplot120.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0120rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0120rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0120rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0120rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0120rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0120rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (121)'
+set output 'gplot121.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0121rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0121rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0121rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0121rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0121rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0121rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (122)'
+set output 'gplot122.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0122rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0122rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0122rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0122rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0122rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0122rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (123)'
+set output 'gplot123.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0123rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0123rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0123rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0123rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0123rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0123rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (124)'
+set output 'gplot124.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0124rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0124rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0124rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0124rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0124rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0124rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (125)'
+set output 'gplot125.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0125rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0125rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0125rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0125rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0125rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0125rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (126)'
+set output 'gplot126.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0126rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0126rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0126rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0126rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0126rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0126rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (127)'
+set output 'gplot127.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0127rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0127rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0127rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0127rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0127rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0127rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (128)'
+set output 'gplot128.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0128rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0128rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0128rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0128rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0128rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0128rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (129)'
+set output 'gplot129.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0129rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0129rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0129rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0129rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0129rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0129rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (130)'
+set output 'gplot130.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0130rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0130rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0130rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0130rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0130rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0130rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (131)'
+set output 'gplot131.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0131rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0131rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0131rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0131rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0131rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0131rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (132)'
+set output 'gplot132.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0132rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0132rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0132rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0132rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0132rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0132rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (133)'
+set output 'gplot133.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0133rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0133rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0133rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0133rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0133rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0133rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (134)'
+set output 'gplot134.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0134rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0134rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0134rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0134rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0134rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0134rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (135)'
+set output 'gplot135.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0135rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0135rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0135rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0135rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0135rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0135rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (136)'
+set output 'gplot136.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0136rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0136rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0136rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0136rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0136rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0136rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (137)'
+set output 'gplot137.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0137rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0137rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0137rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0137rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0137rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0137rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (138)'
+set output 'gplot138.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0138rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0138rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0138rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0138rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0138rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0138rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (139)'
+set output 'gplot139.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0139rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0139rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0139rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0139rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0139rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0139rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (140)'
+set output 'gplot140.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0140rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0140rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0140rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0140rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0140rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0140rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (141)'
+set output 'gplot141.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0141rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0141rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0141rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0141rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0141rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0141rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (142)'
+set output 'gplot142.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0142rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0142rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0142rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0142rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0142rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0142rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (143)'
+set output 'gplot143.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0143rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0143rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0143rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0143rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0143rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0143rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (144)'
+set output 'gplot144.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0144rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0144rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0144rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0144rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0144rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0144rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (145)'
+set output 'gplot145.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0145rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0145rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0145rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0145rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0145rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0145rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (146)'
+set output 'gplot146.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0146rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0146rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0146rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0146rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0146rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0146rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (147)'
+set output 'gplot147.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0147rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0147rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0147rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0147rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0147rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0147rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (148)'
+set output 'gplot148.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0148rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0148rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0148rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0148rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0148rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0148rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (149)'
+set output 'gplot149.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0149rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0149rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0149rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0149rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0149rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0149rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (150)'
+set output 'gplot150.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0150rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0150rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0150rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0150rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0150rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0150rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (151)'
+set output 'gplot151.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0151rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0151rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0151rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0151rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0151rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0151rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (152)'
+set output 'gplot152.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0152rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0152rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0152rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0152rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0152rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0152rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (153)'
+set output 'gplot153.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0153rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0153rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0153rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0153rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0153rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0153rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (154)'
+set output 'gplot154.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0154rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0154rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0154rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0154rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0154rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0154rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (155)'
+set output 'gplot155.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0155rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0155rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0155rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0155rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0155rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0155rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (156)'
+set output 'gplot156.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0156rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0156rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0156rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0156rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0156rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0156rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (157)'
+set output 'gplot157.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0157rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0157rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0157rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0157rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0157rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0157rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (158)'
+set output 'gplot158.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0158rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0158rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0158rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0158rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0158rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0158rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (159)'
+set output 'gplot159.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0159rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0159rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0159rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0159rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0159rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0159rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (160)'
+set output 'gplot160.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0160rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0160rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0160rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0160rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0160rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0160rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (161)'
+set output 'gplot161.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0161rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0161rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0161rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0161rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0161rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0161rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (162)'
+set output 'gplot162.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0162rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0162rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0162rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0162rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0162rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0162rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (163)'
+set output 'gplot163.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0163rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0163rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0163rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0163rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0163rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0163rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (164)'
+set output 'gplot164.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0164rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0164rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0164rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0164rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0164rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0164rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (165)'
+set output 'gplot165.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0165rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0165rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0165rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0165rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0165rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0165rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (166)'
+set output 'gplot166.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0166rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0166rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0166rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0166rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0166rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0166rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (167)'
+set output 'gplot167.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0167rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0167rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0167rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0167rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0167rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0167rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (168)'
+set output 'gplot168.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0168rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0168rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0168rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0168rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0168rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0168rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (169)'
+set output 'gplot169.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0169rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0169rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0169rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0169rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0169rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0169rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (170)'
+set output 'gplot170.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0170rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0170rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0170rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0170rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0170rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0170rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (171)'
+set output 'gplot171.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0171rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0171rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0171rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0171rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0171rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0171rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (172)'
+set output 'gplot172.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0172rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0172rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0172rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0172rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0172rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0172rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (173)'
+set output 'gplot173.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0173rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0173rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0173rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0173rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0173rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0173rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (174)'
+set output 'gplot174.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0174rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0174rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0174rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0174rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0174rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0174rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (175)'
+set output 'gplot175.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0175rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0175rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0175rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0175rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0175rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0175rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (176)'
+set output 'gplot176.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0176rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0176rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0176rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0176rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0176rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0176rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (177)'
+set output 'gplot177.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0177rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0177rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0177rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0177rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0177rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0177rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (178)'
+set output 'gplot178.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0178rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0178rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0178rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0178rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0178rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0178rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (179)'
+set output 'gplot179.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0179rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0179rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0179rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0179rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0179rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0179rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (180)'
+set output 'gplot180.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0180rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0180rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0180rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0180rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0180rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0180rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (181)'
+set output 'gplot181.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0181rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0181rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0181rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0181rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0181rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0181rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (182)'
+set output 'gplot182.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0182rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0182rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0182rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0182rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0182rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0182rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (183)'
+set output 'gplot183.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0183rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0183rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0183rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0183rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0183rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0183rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (184)'
+set output 'gplot184.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0184rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0184rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0184rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0184rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0184rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0184rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (185)'
+set output 'gplot185.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0185rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0185rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0185rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0185rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0185rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0185rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (186)'
+set output 'gplot186.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0186rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0186rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0186rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0186rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0186rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0186rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (187)'
+set output 'gplot187.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0187rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0187rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0187rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0187rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0187rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0187rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (188)'
+set output 'gplot188.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0188rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0188rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0188rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0188rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0188rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0188rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (189)'
+set output 'gplot189.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0189rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0189rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0189rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0189rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0189rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0189rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (190)'
+set output 'gplot190.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0190rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0190rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0190rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0190rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0190rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0190rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (191)'
+set output 'gplot191.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0191rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0191rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0191rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0191rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0191rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0191rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (192)'
+set output 'gplot192.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0192rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0192rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0192rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0192rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0192rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0192rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (193)'
+set output 'gplot193.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0193rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0193rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0193rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0193rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0193rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0193rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (194)'
+set output 'gplot194.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0194rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0194rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0194rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0194rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0194rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0194rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (195)'
+set output 'gplot195.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0195rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0195rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0195rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0195rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0195rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0195rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (196)'
+set output 'gplot196.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0196rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0196rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0196rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0196rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0196rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0196rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (197)'
+set output 'gplot197.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0197rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0197rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0197rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0197rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0197rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0197rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (198)'
+set output 'gplot198.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0198rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0198rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0198rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0198rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0198rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0198rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (199)'
+set output 'gplot199.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0199rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0199rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0199rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0199rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0199rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0199rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'
+set title 'Temporal Variability of Flux Tube Content (200)'
+set output 'gplot200.jpeg'
+plot 's=0.75:dll=2.0//sp/NL2_/NL2_sp0200rad.dat'  with lines title 'Sulfur + (II)',    \
+     's=0.75:dll=2.0//s2p/NL2_/NL2_s2p0200rad.dat' with lines title 'Sulfur ++ (III)',  \
+     's=0.75:dll=2.0//s3p/NL2_/NL2_s3p0200rad.dat' with lines title 'Sulfur +++ (IV)',  \
+     's=0.75:dll=2.0//op/NL2_/NL2_op0200rad.dat'  with lines title 'Oxygen + (II)',    \
+     's=0.75:dll=2.0//o2p/NL2_/NL2_o2p0200rad.dat' with lines title 'Oxygen ++ (III)',  \
+     's=0.75:dll=2.0//elec/NL2_/NL2_elec0200rad.dat' with lines title 'Total',          \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/nl2.dat' title 'Obsererved'

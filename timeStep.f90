@@ -126,6 +126,8 @@ MODULE TIMESTEP
     n%s   = nold%s   + dt * Fs
     call gtzero(n%s)
     Fsp  = F_sp(nold,h,dep,ft)
+!    if( mype .eq. 0 ) print *, "r_ind%ish: ", ind%ish
+!    if( mype .eq. 0 ) print *, "r_ind%isph: ", ind%isph
     n%sp  = nold%sp  + dt * Fsp
     call gtzero(n%sp)
     Fs2p = F_s2p(nold,h,dep,ft)
@@ -152,7 +154,7 @@ MODULE TIMESTEP
 
   subroutine gtzero(num)
     double precision  ::num
-    if (num<0) then 
+    if (num<0.0) then 
       num=0.0 
     end if
   end subroutine gtzero
@@ -234,7 +236,7 @@ MODULE TIMESTEP
     np%o2p = (n%o2p + dt * 0.5 * (Fo2p + F_o2p(n1,h1,dep1, ft1)))
     call gtzero(np%o2p )
 
-    np%elec = (np%sp + 2.0*np%s2p + 3.0*np%s3p + np%op + 2.0*np%o2p)/(1.0-np%protons)
+    np%elec = (np%sp + 2.0*np%s2p + 3.0*np%s3p + np%op + 2.0*np%o2p)!/(1.0-np%protons)
     np%elecHot = np%fh/(1.0-np%fh) * np%elec
 
     nTp%sp  = (nrg%sp  + dt * 0.5 * (EFsp  + EF_sp(n1,T1,h1,ind1,dep1,nu1, ft1))) 
@@ -251,8 +253,14 @@ MODULE TIMESTEP
     call gtzero(nTp%o2p )
     nTp%elec  = (nrg%elec  + dt * 0.5 * (EFelec  + EF_elec(n1,T1,h1, ind1,dep1,lat1,nu1, ft1)))
     call gtzero(nTp%elec )
-       
-  end subroutine
+
+!    if(mype .le. 2) print *, rdist, EFelec, T1%elec
+!    if(mype .le. 2) print *, rdist, EF_elec(n1,T1,h1, ind1,dep1,lat1,nu1, ft1), nTp%elec/np%elec
+!    if(mype .le. 2) print *, n%elec, n1%elec, np%elec
+!    if(mype .le. 2) print *, nrg%elec, nTp%elec
+!    if(mype .le. 2) print *, ""
+ 
+  end subroutine improvedEuler
 
   subroutine cm3_latavg_model(n, T, nrg, h, v, n1, T1, nrg1, h1, v1, np, Tp, nTp, ind, dep, dep1, lat, lat1, ft, z)
     type(density)   ::n, n1, np
@@ -274,7 +282,7 @@ MODULE TIMESTEP
     call lat_distribution(n, h, lat)
     
     call updateNu(v, lat, T, n%elecHot)
-
+    mass_loading(mype+1)=0.0
     call fluxCorrect(n, n1, h, ind, dep, ft)
 
     do i=1, LAT_SIZE 
@@ -292,15 +300,19 @@ MODULE TIMESTEP
     call lat_distribution(n1, h1, lat1)
 
     call stepNu(v1, n1, lat1, T1)
-
+    mass_loading(mype+1)=0.0
     call improvedEuler(np, n, n1, T1, h1, ind, dep1, v1, ft, lat1, nTp, nrg)
-
+  
     call update_temp(np, nTp, Tp)
+    call get_scale_heights(h, Tp, np)
+
+!    if(mype .eq. 0) print *, T%sp, T1%sp, Tp%sp
 
     n = np
     nrg = nTp
     T = Tp
 
+!    if(mype .le. 2) print *, rdist, T%elec
 !    call az_transport(n, nrg)
 
   end subroutine cm3_latavg_model

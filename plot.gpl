@@ -1,5 +1,0 @@
-set terminal jpeg
-set output 'source.jpeg'
-plot 'AllSource.dat'
-set output 'transport.jpeg'
-plot 'AllTrans.dat'

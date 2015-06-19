@@ -1,66 +1,80 @@
 #!/bin/bash
 
-npes=48
-days=200
+lng=1
+rad=37
+npes=$(($rad * $lng))
+days=100
+
+./changeDimension.sh $rad $lng
+
+#echo $lng $rad $npes
 
 make all
 
 if [ $? -eq 0 ] 
   then 
 
+  echo "Model Compiled"
+  date
   time mpirun -n $npes ./torus > runlog
-  
+   
   if [ $? -ge 0 ] 
     then 
+    echo "Run Completed Successfully"
 
-    mv DENS*.dat plots/.  
-    mv MIXR*.dat plots/.  
-    mv TEMP*.dat plots/.  
-    mv INTS*.dat plots/.  
-    mv intensity*.dat plots/.  
+    ./moveData.sh $rad $lng
+
+    ./transport.sh $days
 
     cd plots
-       
-      python radData.py
-#      ./plotify $days INTS
-#      mv animated.avi ../intensity.avi
-#      ./overlay $days 
-#      mv overlay.jpeg ../.
-#      mv animated.gif ../dens.gif
-#      ./plotify 150 TEMP
-#      mv animated.gif ../temp.gif
 
-      mv DENS*.dat data/.  
-      mv MIXR*.dat data/.  
-      mv TEMP*.dat data/.  
-      mv INTS*.dat data/.  
-      rm intensity*.dat
+#      ./azplots $days MIXR 
+#      mv animated.mpeg ../azdens.mpeg
 
-      cd data
-        ./organize.sh    
-#        ./peakPlot.sh $days
-#        ./plotRatio.sh $days
-#        cp peaks.jpeg ../../.
-#        cp peakRatio.jpeg ../../.
-      cd ..
+#      ./3Dplots $days MIXR sp
+#      mv animated.mpeg ../3dspplot.mpeg
+#      mv 3dlast.jpeg ../3dspplot.jpeg
+
+#      ./3Dplots $days MIXR s3p
+#      mv animated.mpeg ../3ds3pplot.mpeg
+#      mv 3dlast.jpeg ../3ds3pplot.jpeg
+
+#      ./3Dplots $days VSUB .
+#      mv animated.mpeg ../3dVelPlot.mpeg
 
       ./radialplots $days DENS
-      mv animated.avi ../dens.avi
+      mv animated.mpeg ../raddens.mpeg
+
+      ./radialplots $days NL2_
+      mv animated.mpeg ../radnl2.mpeg
 
       ./radialplots $days MIXR
-      mv animated.avi ../dens.avi
+      mv animated.mpeg ../radmix.mpeg
 
       ./radialplots $days TEMP
-      mv animated.avi ../dens.avi
+      mv animated.mpeg ../radtemp.mpeg
+
+#      ./azplots $days TEMP
+#      mv animated.mpeg ../aztemp.mpeg
+
+#      ./azplots $days DENS
+#      mv animated.mpeg ../azdens.mpeg
+
+#      ./miscPlot $days MOUT
+#      mv misc.mpeg ../misc.mpeg
 
     cd ..
 
-    vlc dens.avi 
+    ./plots/mixRatio.sh $days
+
+#    vlc dens.mpeg
 
   fi
   make clean
+  echo "Run Complete"
 fi
 
+paplay --volume=65000 /usr/share/sounds/KDE-Im-Message-In.ogg
 
 #gifview -a dens.gif &
 #mplayer -loop -0 dens.avi &

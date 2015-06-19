@@ -6,7 +6,7 @@ MODULE GLOBAL
 
 USE varTypes
 
-real                 :: rates,trans,net_source,trans_exp,iondens0,net_source0,tau0
+real                 :: rates,trans,net_source,trans_exp,iondens0,net_source0,tau0,longitude
 integer              :: info,runt,dt
 real                 :: zoff,rdist, v_r0
 real                 :: sys3variations,lag_amp,lag_phase,lag_const,fehot_amp,fehot_phase,fehot_const, lon3
@@ -17,6 +17,6 @@ type(recomb)         ::rec_tables !Holds recombinaion tables read in dielectroni
 
 logical              ::trans_type=.false.
 
-real                 ::protons=0.1  !<can be added to inputs.dat
+real                 ::protons=0.0  !<can be added to inputs.dat
 
 END MODULE GLOBAL

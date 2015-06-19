@@ -1,0 +1,91 @@
+#!/bin/bash
+
+FILE='test'
+FILELIST='list.dat'
+PREFIX=$2
+species=$3
+DIR='/home/mrcopper/Desktop/Project/2D_Model/plots/data'
+
+#echo '' > $FILELIST
+
+echo 'set terminal jpeg'                                      >$FILE
+echo 'set rmargin 0.1'                                     >>$FILE
+echo 'set lmargin 0.1'                                     >>$FILE
+echo 'set bmargin 0.1'                                     >>$FILE
+echo 'set tmargin 0.1'                                     >>$FILE
+echo 'set log cb'                                            >>$FILE
+echo 'set logscale z'                                        >>$FILE
+echo 'set key off'                                         >>$FILE
+echo 'set size square'                                         >>$FILE
+echo 'set grid polar 60'                                     >>$FILE
+#if [ $PREFIX = $DENS ]
+#  then
+#  echo "set yrange [1:10000]"                                >>$FILE
+#fi
+echo 'set mapping cylindrical'                               >>$FILE
+echo 'set view map'                                          >>$FILE
+#echo 'set palette model RGB'                                          >>$FILE
+echo 'set angle degrees'                                     >>$FILE
+#echo 'set zrange [0.01:0.2]'                                 >>$FILE
+echo 'set cbrange [0.01:0.05]'                                >>$FILE
+echo 'set pm3d implicit interpolate 0,0'                >>$FILE
+#echo 'set pm3d implicit at b interpolate 0,0'                >>$FILE
+echo 'set palette defined ( 0 "#000090",\'>>$FILE
+echo '                      1 "#000fff",\'>>$FILE
+echo '                      2 "#0090ff",\'>>$FILE
+echo '                      3 "#0fffee",\'>>$FILE
+echo '                      4 "#90ff70",\'>>$FILE
+echo '                      5 "#ffee00",\'>>$FILE
+echo '                      6 "#ff7000",\'>>$FILE
+echo '                      7 "#ee0000",\'>>$FILE
+echo '                      8 "#7f0000")'>>$FILE
+ # echo "set yrange [0:2000]"                                     >>$FILE
+
+#if [ $2 -eq "DENS" ]
+#then
+#  echo "This part works"
+#  echo "set yrange [0:500]"                                    >>$FILE
+#  echo "set ytics 50"                                         >>$FILE
+#fi
+
+options=''
+
+for i in $(seq 1 $1)
+do
+  if [ "$i" -lt 10 ]
+  then   
+    echo "set title 'Temporal Variability of Flux Tube Content of $species '" >>$FILE
+    echo "set output 'gplot000$i.jpeg'" >> $FILE  
+    echo "gplot000$i.jpeg" >> $FILELIST  
+    echo "splot '"$DIR"/$species/"$PREFIX"/"$PREFIX""$species"000"$i"_3D.dat'  "$options""  >> $FILE
+
+  else
+    if [ "$i" -lt 100 ] 
+    then
+      echo "set title 'Temporal Variability of Flux Tube Content of $species '" >>$FILE
+      echo "set output 'gplot00$i.jpeg'" >> $FILE  
+      echo "gplot00$i.jpeg" >> $FILELIST  
+      echo "splot '"$DIR"/$species/"$PREFIX"/"$PREFIX""$species"00"$i"_3D.dat'  "$options""  >> $FILE
+   
+      else
+        echo "set title 'Temporal Variability of Flux Tube Content of $species  '" >>$FILE
+        echo "set output 'gplot0$i.jpeg'" >> $FILE  
+        echo "gplot0$i.jpeg" >> $FILELIST  
+        echo "splot '"$DIR"/$species/"$PREFIX"/"$PREFIX""$species"0"$i"_3D.dat'  "$options""  >> $FILE
+      fi
+  fi
+done
+
+gnuplot $FILE
+
+#mencoder -nosound -ovc lavc -lavcopts \
+mencoder -nosound -really-quiet -ovc lavc -lavcopts \
+  vcodec=mpeg4:mbd=2:trell:autoaspect:vqscale=3 \
+  -vf scale=640:480 -mf type=jpeg:fps=10 \
+  mf://@list.dat -o animated.mpeg
+
+mv gplot*"$i".jpeg 3dlast.jpeg
+
+#mv gplot*.jpeg ../"$species"*.jpeg
+rm gplot*.jpeg
+rm $FILELIST

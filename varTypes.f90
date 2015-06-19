@@ -3,8 +3,14 @@
 
 MODULE varTypes
 
-  integer :: EMIS_SIZE, CX_SIZE, LAT_SIZE, REC_ROWS, REC_O, REC_S, LNG_GRID, RAD_GRID
-  real    ::PI, rootpi, Rj, dTOr, mp, me, mpg, meg
+  USE DIMENSIONS
+
+  integer :: EMIS_SIZE, CX_SIZE, LAT_SIZE, REC_ROWS, REC_O, REC_S
+  real    ::PI, rootpi, Rj, dTOr, mp, me, mpg, meg, charge
+!Simulation grid dimensions (Must multiply to equal npes)
+!  parameter(LNG_GRID=1)       !number of longitudinal slices of the torus
+!  parameter(RAD_GRID=8)        !number of longitudinal slices of the torus
+
   parameter(EMIS_SIZE=101)    !size of chianti emmision tables
   parameter(CX_SIZE=17)       !charge exchange reactions
   parameter(LAT_SIZE=21)      !latitudinal grid size
@@ -14,13 +20,14 @@ MODULE varTypes
   parameter(PI=3.1415927)     ! PI
   parameter(rootpi=sqrt(PI))  !sqrt(pi) (reduces calculations)
   parameter(Rj=71492.0)       !radius of jupiter in km
-  parameter(dTOr=(2.0*PI/360.0))  !conversion from degree to radian
+  parameter(Rjm=71492000.0)   !radius of jupiter in m
+  parameter(dTOr=(PI/180.0))  !conversion from degree to radian
   parameter(mp=1.672621e-27)  !kg
   parameter(mpg=1.672621e-24) !grams 
   parameter(me=9.109381e-31)  !kg
   parameter(meg=9.109381e-28) !grams
-  parameter(LNG_GRID=1)       !number of longitudinal slices of the torus
-  parameter(RAD_GRID=48)        !number of longitudinal slices of the torus
+  parameter(charge=1.6e-19)   !elementary charge
+  parameter(omega=1.76e-4)    !angular velocity of Jupiter (rad/s)
 !  parameter()      
 
 
