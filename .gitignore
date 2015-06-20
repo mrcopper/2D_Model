@@ -1,1 +1,8 @@
 **/*.dat
+!./inputs.dat
+**/*.jpeg
+**/*.jpg
+**/*.png
+**/*.mpeg
+**/*.avi
+**/runlog
