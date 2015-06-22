@@ -4,10 +4,10 @@
 0.5e28
 -10.0
 2.00                  o_to_s
-0.001
-2.5
-0.5e-7
-2.0
+0.01
+0.7
+5.5e-7
+5.5
 0                     transport (days) #obsolete
 42.0                  tehot hot electron temp in eV
 5.5                   hot electron temperature power law
@@ -23,5 +23,5 @@
 0.00                  s value for upwind scheme
 0.030                 initial radial velocity (km/s)
 5.0                   velocity exponent
-10                    transport iterations per chemistry iteration
+50                    transport iterations per chemistry iteration
 2000.0                dt for chemistry

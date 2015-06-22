@@ -11,7 +11,7 @@ IMPLICIT NONE
 
 CONTAINS
 
-subroutine transport_NL2(nl2, nl2e, dll0, dlla)
+subroutine transport2_NL2(nl2, nl2e, dll0, dlla)
   type(density)      ::nl2, nl2e, nl2b, nl2out
   real               ::dll0, dlla
   logical            ::isNaN
@@ -41,6 +41,65 @@ subroutine transport_NL2(nl2, nl2e, dll0, dlla)
   call transport_species(nl2b%op , nl2%op , dll, lp, lflux, nl2e%op , tbout, tbin, nl2out%op ,dllm)
   call transport_species(nl2b%o2p, nl2%o2p, dll, lp, lflux, nl2e%o2p, tbout, tbin, nl2out%o2p,dllm)
 
+!  call transport_species(nl2b%sp , nl2%sp , dll, lp, lflux, nl2e%sp , tbout, nl2out)
+!  call transport_species(nl2b%s2p, nl2%s2p, dll, lp, lflux, nl2e%s2p, tbout, tbin)
+!  call transport_species(nl2b%s3p, nl2%s3p, dll, lp, lflux, nl2e%s3p, tbout, tbin)
+!  call transport_species(nl2b%op , nl2%op , dll, lp, lflux, nl2e%op , tbout, tbin)
+!  call transport_species(nl2b%o2p, nl2%o2p, dll, lp, lflux, nl2e%o2p, tbout, tbin)
+
+!  call transport_species(nl2b%XYZ, nl2%XYZ, dll, lp, lflux, nl2e%XYZ, tbout, tbin)
+
+end subroutine transport2_NL2
+
+subroutine transport_NL2(nl2, nl2e, dll0, dlla)
+  type(density)      ::nl2, nl2e, nl2b, nl2out
+  real               ::dll0, dlla
+  logical            ::isNaN
+  real               ::tbout, tbin, r0, rout, dl2, lp, dll, nl, dllm, lm
+  double precision   ::lflux
+  double precision   ::TotNL2, TotNL2e, TotOut, TotNL2b, TotOld, TotOlde
+
+  tbout=100.00 !in eV
+  tbin=70.00
+
+  r0=6.0
+  dl2=(dr/Rj)/2.0
+  lp=rdist+dl2
+  lm=rdist-dl2
+  dll=dll0*(lp/r0)**dlla
+  dllm=dll0*(lm/r0)**dlla
+  lflux=rdist+((dr/Rj)/2.0)
+
+  nl2out%sp =4.0E33
+  nl2out%s2p=2.0E34
+  nl2out%s3p=2.0E34
+  nl2out%op =1.0E35
+  nl2out%o2p=1.0E35
+
+  TotNL2 =nl2%sp +nl2%s2p +nl2%s3p +nl2%op +nl2%o2p
+  TotNL2e=nl2e%sp+nl2e%s2p+nl2e%s3p+nl2e%op+nl2e%o2p
+  TotOut =nl2out%sp +nl2out%s2p +nl2out%s3p +nl2out%op +nl2out%o2p
+
+  TotOld =TotNL2
+  TotOlde=TotNL2e
+
+  call transport_species(TotNL2b , TotNL2 , dll, lp, lflux, TotNL2e , tbout, tbin, TotOut ,dllm)
+!  call transport_species(nl2b%s2p, nl2%s2p, dll, lp, lflux, nl2e%s2p, tbout, tbin, nl2out%s2p,dllm)
+!  call transport_species(nl2b%s3p, nl2%s3p, dll, lp, lflux, nl2e%s3p, tbout, tbin, nl2out%s3p,dllm)
+!  call transport_species(nl2b%op , nl2%op , dll, lp, lflux, nl2e%op , tbout, tbin, nl2out%op ,dllm)
+!  call transport_species(nl2b%o2p, nl2%o2p, dll, lp, lflux, nl2e%o2p, tbout, tbin, nl2out%o2p,dllm)
+
+  nl2%sp= nl2%sp*(TotNL2/TotOld)
+  nl2%s2p= nl2%s2p*(TotNL2/TotOld)
+  nl2%s3p= nl2%s3p*(TotNL2/TotOld)
+  nl2%op= nl2%op*(TotNL2/TotOld)
+  nl2%o2p= nl2%o2p*(TotNL2/TotOld)
+
+  nl2e%sp= nl2e%sp*(TotNL2e/TotOlde)
+  nl2e%s2p= nl2e%s2p*(TotNL2e/TotOlde)
+  nl2e%s3p= nl2e%s3p*(TotNL2e/TotOlde)
+  nl2e%op= nl2e%op*(TotNL2e/TotOlde)
+  nl2e%o2p= nl2e%o2p*(TotNL2e/TotOlde)
 !  call transport_species(nl2b%sp , nl2%sp , dll, lp, lflux, nl2e%sp , tbout, nl2out)
 !  call transport_species(nl2b%s2p, nl2%s2p, dll, lp, lflux, nl2e%s2p, tbout, tbin)
 !  call transport_species(nl2b%s3p, nl2%s3p, dll, lp, lflux, nl2e%s3p, tbout, tbin)
