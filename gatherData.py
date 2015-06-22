@@ -35,10 +35,10 @@ os.popen("make clean")
 os.popen("make all")
 sourceArray=[0.5, 2.5, 6.0]
 sourceAlphaArray=[-10.0, -14.5, -16.0]
-dllArray=[0.5, 7.0, 18.0]
-dllAlphaArray=[2.0, 3.5, 5.0]
-fheArray=[0.0010, 0.0016, 0.0024]
-fheAlphaArray=[2.5, 4.0, 7.0]
+dllArray=[5.5, 7.0, 10.0]
+dllAlphaArray=[2.0, 5.5, 8.0]
+fheArray=[0.0010, 0.005, 0.01]
+fheAlphaArray=[0.7, 2.0, 5.0]
 product=itertools.product(range(0,3), repeat=6)
 for index in product:
 #    extension="s="+str(source)+":dll="+str(dll)a
