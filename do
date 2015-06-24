@@ -3,7 +3,7 @@
 lng=1
 rad=37
 npes=$(($rad * $lng))
-days=100
+days=50
 
 ./changeDimension.sh $rad $lng
 

@@ -115,13 +115,13 @@ out=open("chi.dat", 'w')
 #for i in range(0, len(dll)) :
 # # for dll in {3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 15.0, 18.0}:
 #  for j in range(0, len(s)) : #take from gatherData.py that generated the data
-sourceArray=[0.5, 2.5, 6.0]
+sourceArray=[1.0, 2.5, 3.0, 3.5, 5.0]
 sourceAlphaArray=[-10.0, -14.5, -16.0]
-dllArray=[5.5, 7.0, 10.0]
-dllAlphaArray=[2.0, 5.5, 8.0]
+dllArray=[5.5, 6.5, 7.0, 8.0, 11.0]
+dllAlphaArray=[3.5, 4.5, 5.5, 7.0, 9.0]
 fheArray=[0.0010, 0.005, 0.01]
 fheAlphaArray=[0.7, 2.0, 5.0]
-product=itertools.product(range(0,3), repeat=6)
+product=itertools.product(range(0,5), repeat=3)
 for index in product:
     run="run-"+str(index)
     if(not os.path.exists("./"+run)): print "BAD", run
@@ -136,11 +136,11 @@ for index in product:
       chis.append((chis[3] + chis[5] + 12.0*PuvChi )/35.0)
       outputLine = ""
       outputLine = outputLine + str(sourceArray[index[0]]) + "e28" + ' , '
-      outputLine = outputLine + str(sourceAlphaArray[index[1]]) + ' , '
-      outputLine = outputLine + str(dllArray[index[2]]) + "e-7" + ' , '
-      outputLine = outputLine + str(dllAlphaArray[index[3]]) + ' , '
-      outputLine = outputLine + str(fheArray[index[4]]) + ' , '
-      outputLine = outputLine + str(fheAlphaArray[index[5]]) + ' , '
+      outputLine = outputLine + str(-13.5) + ' , '
+      outputLine = outputLine + str(dllArray[index[1]]) + "e-7" + ' , '
+      outputLine = outputLine + str(dllAlphaArray[index[2]]) + ' , '
+      outputLine = outputLine + str(0.0065) + ' , '
+      outputLine = outputLine + str(1.0) + ' , '
 #      out.write(outputLine)
 #      print O, '\n', E, '\n', "+++++++++++++++++++++++++++++++++++++++++++++"
       output(outputLine, chis, filenames)

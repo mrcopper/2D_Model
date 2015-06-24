@@ -62,6 +62,7 @@ MODULE TIMESTEP
 
     v%elec_elecHot= nu_ee(lat%elec, T%elec, elecHot, T%elecHot) 
     
+    print *, rdist, v%elec_elecHot, fehot_const
 
   end subroutine updateNu
 

@@ -25,7 +25,7 @@ def catalog(extension):
     shutil.copy("./inputs.dat",path+"inputs.dat")
     shutil.copy("./runlog",path+"runlog")
 
-os.popen("date")
+os.popen("date >chirun.dat")
 i=0
 lng=1
 rad=31
@@ -33,21 +33,21 @@ npes=lng*rad
 os.popen("./changeDimension.sh "+ str(rad) + " " + str(lng))
 os.popen("make clean")
 os.popen("make all")
-sourceArray=[0.5, 2.5, 6.0]
+sourceArray=[1.0, 2.5, 3.0, 3.5, 5.0]
 sourceAlphaArray=[-10.0, -14.5, -16.0]
-dllArray=[5.5, 7.0, 10.0]
-dllAlphaArray=[2.0, 5.5, 8.0]
+dllArray=[5.5, 6.5,  7.0, 8.0, 11.0]
+dllAlphaArray=[3.5, 4.5, 5.5, 7.0, 9.0]
 fheArray=[0.0010, 0.005, 0.01]
 fheAlphaArray=[0.7, 2.0, 5.0]
-product=itertools.product(range(0,3), repeat=6)
+product=itertools.product(range(0,5), repeat=3)
 for index in product:
 #    extension="s="+str(source)+":dll="+str(dll)a
     source=sourceArray[index[0]]
-    sourceAlpha=sourceAlphaArray[index[1]]
-    dll=dllArray[index[2]]
-    dllAlpha=dllAlphaArray[index[3]]
-    fhe=fheArray[index[4]]
-    fheAlpha=fheAlphaArray[index[5]]
+    sourceAlpha=-13.5
+    dll=dllArray[index[1]]
+    dllAlpha=dllAlphaArray[index[2]]
+    fhe=0.0065
+    fheAlpha=1.0
     extension="run-"+str(index)
     path="./plots/archive/"+extension+"/"
     if ( 1 ):#not os.path.exists(path)):
@@ -63,10 +63,10 @@ for index in product:
       os.popen("./moveData.sh " + str(rad) +" "+ str(lng))
       catalog(extension)
     i=i+1
-    print "Completed run ", i, "/", len(dllArray)**6, ".", index
+    print "Completed run ", i, "/", len(dllArray)**3, ".", index
     sys.stdout.flush()
 
-os.popen("date")
+os.popen("date >> chirun.dat")
 
   #for dll:
     #switch 

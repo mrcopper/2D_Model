@@ -11,7 +11,7 @@ IMPLICIT NONE
 
 CONTAINS
 
-subroutine transport2_NL2(nl2, nl2e, dll0, dlla)
+subroutine transport_NL2(nl2, nl2e, dll0, dlla)
   type(density)      ::nl2, nl2e, nl2b, nl2out
   real               ::dll0, dlla
   logical            ::isNaN
@@ -49,9 +49,9 @@ subroutine transport2_NL2(nl2, nl2e, dll0, dlla)
 
 !  call transport_species(nl2b%XYZ, nl2%XYZ, dll, lp, lflux, nl2e%XYZ, tbout, tbin)
 
-end subroutine transport2_NL2
+end subroutine transport_NL2
 
-subroutine transport_NL2(nl2, nl2e, dll0, dlla)
+subroutine transport2_NL2(nl2, nl2e, dll0, dlla)
   type(density)      ::nl2, nl2e, nl2b, nl2out
   real               ::dll0, dlla
   logical            ::isNaN
@@ -108,7 +108,7 @@ subroutine transport_NL2(nl2, nl2e, dll0, dlla)
 
 !  call transport_species(nl2b%XYZ, nl2%XYZ, dll, lp, lflux, nl2e%XYZ, tbout, tbin)
 
-end subroutine transport_NL2
+end subroutine transport2_NL2
 
 subroutine transport_species(nl2b, nl2, dll, lp, lflux, nl2e, tbout, tbin, nl2out, dllm)
   USE INPUTS

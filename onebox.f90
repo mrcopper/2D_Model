@@ -170,6 +170,7 @@ subroutine model()
   Teh0= tehot*(rdist/6.0)**tehot_alpha
   if(Teh0 .gt. 400.0) Teh0=400.0
   fehot_const= fehot_const*(rdist/6.0)**fehot_exp
+  n%fh=fehot_const
 !  trans = 4.62963e-7
 !  trans = 1.0/((v_r0/dr)*86400.0) 
 !  net_source = source*(6.0/rdist)**20 ! ~6.3e6 fix FIX
@@ -182,10 +183,10 @@ subroutine model()
 !  net_source=(source/((10.0**radgrid)*source_mult))
 
   n%elec = (n%sp + n%op + 2 * (n%s2p + n%o2p) + 3 * n%s3p) !* (1.0 - n%protons)
-!  n%elecHot = n%fh * n%elec / (1.0-n%fh)
-  n%elecHot = 0.01 * n%elec
+  n%elecHot = n%fh * n%elec / (1.0-n%fh)
+!  n%elecHot = 0.01 * n%elec
 
-  n%fc = 0.0 - n%fh
+  n%fc = 1.0 - n%fh
 
 !set temp values
   T%sp      = Ti0
