@@ -60,7 +60,7 @@ subroutine transport2_NL2(nl2, nl2e, dll0, dlla)
   double precision   ::TotNL2, TotNL2e, TotOut, TotNL2b, TotOld, TotOlde
 
   tbout=100.00 !in eV
-  tbin=70.00
+  tbin=10.00
 
   r0=6.0
   dl2=(dr/Rj)/2.0

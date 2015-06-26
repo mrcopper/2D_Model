@@ -62,7 +62,7 @@ MODULE TIMESTEP
 
     v%elec_elecHot= nu_ee(lat%elec, T%elec, elecHot, T%elecHot) 
     
-    print *, rdist, v%elec_elecHot, fehot_const
+!    print *, rdist, v%elec_elecHot, fehot_const
 
   end subroutine updateNu
 
@@ -193,7 +193,7 @@ MODULE TIMESTEP
     EFelec = EF_elec(n, T, h, ind, dep, lat, v, ft)
     updateNT%elec=nrg%elec + dt * EFelec
     call gtzero(updateNT%elec)
-    !print *, nrg%elec, updateNT%elec
+!    print *, rdist, EFelec
 
   end function updateNT
 
@@ -303,8 +303,12 @@ MODULE TIMESTEP
     call stepNu(v1, n1, lat1, T1)
     mass_loading(mype+1)=0.0
     call improvedEuler(np, n, n1, T1, h1, ind, dep1, v1, ft, lat1, nTp, nrg)
-  
     call update_temp(np, nTp, Tp)
+    !if(mype .le. 1) print *, rdist, nTp%elec, Tp%elec
+!    print *, rdist, Tp%elecHot, n%fh
+!    if(mype .eq. 0) print *, "+++++++++++++++++++++++++++"
+
+!    print *, rdist, EFelec
     call get_scale_heights(h, Tp, np)
 
 !    if(mype .eq. 0) print *, T%sp, T1%sp, Tp%sp

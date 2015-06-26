@@ -139,14 +139,14 @@ subroutine model()
   zoff= abs(0.0* cos((lon3-longitude) * dTOr) * dTOr * rdist * Rj) !in km
   n_height = Rj/2.0
 
-  tm0=0.01
+  tm0=0.00
 
 !set density values
   const=1800.0
 
   test_multiplier=1.0
   if( test_pattern ) then
-    if( rdist .gt. 7.0 .and. rdist .lt. 9.0) test_multiplier=4.0
+!!    if( rdist .gt. 7.0 .and. rdist .lt. 9.0) test_multiplier=4.0
   endif
 
 !  n%sp = 0.060 * const * test_multiplier* (rdist/6.0)**(-8.0)
@@ -183,7 +183,7 @@ subroutine model()
 !  net_source=(source/((10.0**radgrid)*source_mult))
 
   n%elec = (n%sp + n%op + 2 * (n%s2p + n%o2p) + 3 * n%s3p) !* (1.0 - n%protons)
-  n%elecHot = n%fh * n%elec / (1.0-n%fh)
+  n%elecHot = n%fh * n%elec! / (1.0-n%fh)
 !  n%elecHot = 0.01 * n%elec
 
   n%fc = 1.0 - n%fh
@@ -268,7 +268,7 @@ enddo
   n%fc= 1.0 - n%fh   
 
   n%elec = ((n%sp + n%op) + 2.0*(n%s2p + n%o2p) + 3.0 * n%s3p)!/(1.0-n%protons)
-  n%elecHot = n%elec * n%fh/n%fc
+  n%elecHot = n%elec * n%fh!/n%fc
   nrg%elec = n%elec * T%elec
   nrg%elecHot = n%elecHot * T%elecHot
   nrg%sp = n%sp * T%sp
@@ -309,7 +309,8 @@ enddo
 !    if( mype .eq. 0 ) then
 !      print *, "((((((((((((((((((( i = ", i, " )))))))))))))))))))"
 !    endif
-    tm = tm0 + (i-1) * dt / 86400
+    tm = tm0 + (i-1) * dt / 86400.0
+    if( mype .eq. 0) print*, tm
 !if(mype .eq. 6) print *, n%s2p
     var =exp(-((tm-neutral_t0)/neutral_width)**2)
 
@@ -357,13 +358,13 @@ enddo
     ni%fc = n%fc
     np%fc = n%fc
 
-    n%elecHot = n%elec * n%fh/n%fc
+    n%elecHot = n%elec * n%fh!/n%fc
     nrg%elecHot = n%elecHot * T%elecHot
 
     do j=1, LAT_SIZE
       lat%z(j)= (j-1) * h%elec / 10.0  !Initializing lat%z
       lat%elec(j) = n%elec*exp(-(lat%z(j)/h%elec)**2)
-      lati%elecHot(j) = n%elecHot*exp(-(lat%z(j)/h%elec)**2)
+      lati%elecHot(j) = n%elecHot!*exp(-(lat%z(j)/h%elec)**2)
     end do
 
     if ( DEBUG_GEN ) then !this variable set in debug.f90
@@ -732,6 +733,8 @@ subroutine Grid_transport(n, T, nrg, dep, h, nl2, nl2e)
 !    if(mype .eq. 0) print *, i 
   enddo
 
+  call iterate_NL2(nl2, nl2e, n, T, h)
+
   T%sp=(nl2e%sp/(nl2%sp*rdist**2))**(3.0/4.0)
   nrg%sp=n%sp*T%sp
   T%s2p=(nl2e%s2p/(nl2%s2p*rdist**2))**(3.0/4.0)
@@ -750,7 +753,6 @@ subroutine Grid_transport(n, T, nrg, dep, h, nl2, nl2e)
 !  T%o2p=(nl2e%o2p/(nl2%o2p*rdist**2))**(3/4)
 
   isNaN=NaNcatch(nl2%sp, 10, mype)
-  call iterate_NL2(nl2, nl2e, n, T, h)
 !  if(mype .eq. 0) print*, n%sp, n%s2p, n%s3p, n%op, n%o2p
 !  if(mype .eq. 0) print*, ""
   n%elec=(n%sp + 2.0*n%s2p + 3.0*n%s3p + n%op + 2.0*n%o2p)/(1.0-n%protons) 

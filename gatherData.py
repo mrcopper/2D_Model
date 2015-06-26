@@ -34,20 +34,27 @@ os.popen("./changeDimension.sh "+ str(rad) + " " + str(lng))
 os.popen("make clean")
 os.popen("make all")
 sourceArray=[1.0, 2.5, 3.0, 3.5, 5.0]
-sourceAlphaArray=[-10.0, -14.5, -16.0]
+lens=len(sourceArray)
+sourceAlphaArray=[-10.0, -14.5]
+lensa=len(sourceAlphaArray)
 dllArray=[5.5, 6.5,  7.0, 8.0, 11.0]
-dllAlphaArray=[3.5, 4.5, 5.5, 7.0, 9.0]
-fheArray=[0.0010, 0.005, 0.01]
-fheAlphaArray=[0.7, 2.0, 5.0]
-product=itertools.product(range(0,5), repeat=3)
+lend=len(dllArray)
+dllAlphaArray=[4.5, 7.0, 9.0, 11.0]
+lenda=len(dllAlphaArray)
+fheArray=[0.0011, 0.0020]
+lenf=len(fheArray)
+fheAlphaArray=[2.0, 5.0]
+lenfa=len(fheAlphaArray)
+runs=lens*lensa*lend*lenda*lenf*lenfa
+product=itertools.product(range(0,lens), range(0,lensa), range(0,lend), range(0,lenda), range(0,lenf), range(0,lenfa))
 for index in product:
 #    extension="s="+str(source)+":dll="+str(dll)a
     source=sourceArray[index[0]]
-    sourceAlpha=-13.5
-    dll=dllArray[index[1]]
-    dllAlpha=dllAlphaArray[index[2]]
-    fhe=0.0065
-    fheAlpha=1.0
+    sourceAlpha=sourceAlphaArray[index[1]]
+    dll=dllArray[index[2]]
+    dllAlpha=dllAlphaArray[index[3]]
+    fhe=fheArray[index[4]]
+    fheAlpha=fheAlphaArray[index[5]]
     extension="run-"+str(index)
     path="./plots/archive/"+extension+"/"
     if ( 1 ):#not os.path.exists(path)):
@@ -63,7 +70,7 @@ for index in product:
       os.popen("./moveData.sh " + str(rad) +" "+ str(lng))
       catalog(extension)
     i=i+1
-    print "Completed run ", i, "/", len(dllArray)**3, ".", index
+    print "Completed run ", i, "/", runs, ".", index
     sys.stdout.flush()
 
 os.popen("date >> chirun.dat")

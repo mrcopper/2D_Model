@@ -11,21 +11,21 @@ set grid ytics
 set grid xtics
 set title 'Mixing Ratio of Sulfur +'
 set output 'spmix.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/MIXR/MIXRsp0100rad.dat'  with lines title 'Sulfur + (II)'  ,  \
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/MIXR/MIXRsp0010rad.dat'  with lines title 'Sulfur + (II)'  ,  \
      '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/spmix.dat' with errorbars title 'Sulfur + Observed' 
 set title 'Mixing Ratio of Sulfur ++'
 set output 's2pmix.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/MIXR/MIXRs2p0100rad.dat'  with lines title 'Sulfur ++ (III)'  ,  \
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/MIXR/MIXRs2p0010rad.dat'  with lines title 'Sulfur ++ (III)'  ,  \
      '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/s2pmix.dat' with errorbars title 'Sulfur ++ Observed' 
 set title 'Mixing Ratio of Sulfur +++'
 set output 's3pmix.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/MIXR/MIXRs3p0100rad.dat'  with lines title 'Sulfur +++ (IV)'  ,  \
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/MIXR/MIXRs3p0010rad.dat'  with lines title 'Sulfur +++ (IV)'  ,  \
      '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/s3pmix.dat' with errorbars title 'Sulfur +++ Observed' 
 set title 'Mixing Ratio of Oxygen +'
 set output 'opmix.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/MIXR/MIXRop0100rad.dat'  with lines title 'Oxygen + (II)'  ,  \
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/MIXR/MIXRop0010rad.dat'  with lines title 'Oxygen + (II)'  ,  \
      '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/opmix.dat' with errorbars title 'Oxygen + Observed' 
 set title 'Mixing Ratio of Oxygen ++'
 set output 'o2pmix.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/MIXR/MIXRo2p0100rad.dat'  with lines title 'Oxygen ++ (III)'  ,  \
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/MIXR/MIXRo2p0010rad.dat'  with lines title 'Oxygen ++ (III)'  ,  \
      '/home/mrcopper/Desktop/Project/2D_Model/plots/Observations/o2pmix.dat' with errorbars title 'Oxygen ++ Observed' 

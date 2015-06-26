@@ -1,13 +1,13 @@
 6.0	              inner boundary
-15.0                  outter boundary
+12.0                  outter boundary
 10.0                  radial distance past which chemical reactions are neglected
-5.0e28
--14.85
+1.0e28
+-10.0
 2.00                  o_to_s
-0.0013
-5.0
-9.0e-7
-4.4
+0.0011
+2.0
+5.5e-7
+4.5
 0                     transport (days) #obsolete
 42.0                  tehot hot electron temp in eV
 5.5                   hot electron temperature power law
@@ -23,5 +23,5 @@
 0.00                  s value for upwind scheme
 0.030                 initial radial velocity (km/s)
 5.0                   velocity exponent
-10                    transport iterations per chemistry iteration
+20                    transport iterations per chemistry iteration
 2000.0                dt for chemistry

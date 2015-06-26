@@ -542,7 +542,7 @@ end function az_loss
   real function lambda_ee(ne, Te)
     double precision  ::ne, Te
 !    real              ::ne, Te
-    lambda_ee = 23.5-.5*log(ne*sqrt(Te**(-5)))-sqrt((1.0e-5) + (((log(Te)-2)**2)/16))
+    lambda_ee = 23.5-.5*log(ne*sqrt(Te**(-5.0)))-sqrt((1.0e-5) + (((log(Te)-2.0)**2.0)/16.0))
   end function lambda_ee
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!SPACER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !From NRL plasma formulary rev 2007 pg. 34
@@ -659,7 +659,15 @@ end function az_loss
     end do
 
     nu_ee=top/bot
-
+!    print *, rdist, nu_ee
+!    if( mype .eq. 0) print *, "ne: ", ne
+!    if( mype .eq. 0) print *, "Te: ", Te
+!    if( mype .eq. 0) print *, "neh: ", neh
+!    if( mype .eq. 0) print *, "Teh: ", Teh
+!    if( mype .eq. 0) print *, "Lambda: ", Lambda
+!    if( mype .eq. 0) print *, "nu_arr: ", nu_arr
+!    if( mype .eq. 0) print *, "nu_ee: ", nu_ee
+!    if( mype .eq. 0) print *, ""
   end function nu_ee  
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!SPACER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   real function nu_ii(n1, T1, z1, mu1, n2, T2, z2, mu2)
@@ -962,9 +970,11 @@ end function az_loss
 
     ipTot= 2.0 * ipPer * n%elec /3.0
 
-    EF_elec= Teq - (2.0 * rad / 3.0) - ipTot !- (v_r0/dr * n%elec * T%elec) 
+    EF_elec= Teq - (2.0 * rad / 3.0)! - ipTot !- (v_r0/dr * n%elec * T%elec) 
 
-!    if(mype .eq. 0) print *, "EF_elec: ", EF_elec, "Teq: ", Teq, "rad: ", (2.0*rad/3.0), "ipTot: ", ipTot
+!    if(mype .eq. 0) print *, rdist, EF_elec, Teq, (2.0*rad/3.0)!, "ipTot: ", ipTot
+ 
+!    print *, rdist, EF_elec
 
   end function EF_elec
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!SPACER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
