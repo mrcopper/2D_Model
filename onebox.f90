@@ -107,7 +107,7 @@ subroutine model()
   rdist= IN_LIM+dr*(radgrid-1)/Rj   !in Rj
   torus_circumference = Rj * rdist * 2.0 * PI
   dx = torus_circumference / LNG_GRID
-  volume=PI*((((rdist*Rj+dr/2.0)*1.0e5))**2 - ((rdist*Rj-dr/2.0)*1.0e5)**2)*0.5*ROOTPI*Rj*1.0e5
+  volume=PI*((((rdist*Rj+dr/2.0)*1.0e5))**2 - ((rdist*Rj-dr/2.0)*1.0e5)**2)*0.5*ROOTPI*Rj*1.0e5/LNG_GRID
 !  volume=dr*dx*1.0e10*ROOTPI*Rj*.5*1.0e5
 !  source=source/volume
   net_source = source * (rdist/6.0)**source_exp

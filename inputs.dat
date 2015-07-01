@@ -1,7 +1,7 @@
 6.0	              inner boundary
 10.25                  outter boundary
 10.0                  radial distance past which chemical reactions are neglected
-1.1e28
+3.0e28
 -12.0
 2.00                  o_to_s
 0.002
