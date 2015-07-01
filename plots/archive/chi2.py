@@ -99,7 +99,7 @@ def getPuv(folder):
   return float(Puv)
 
 def PuvFit(Puv):
-  PuvChi=((1.75-Puv)/0.75)**2
+  PuvChi=((1.75-Puv)/0.3)**2
   return PuvChi
 
 E=[]
@@ -116,14 +116,27 @@ out=open("chi.dat", 'w')
 # # for dll in {3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 15.0, 18.0}:
 #  for j in range(0, len(s)) : #take from gatherData.py that generated the data
 sourceArray=[1.0, 2.5, 3.0, 3.5, 5.0]
-sourceAlphaArray=[-10.0, -14.5, -16.0]
-dllArray=[5.5, 6.5, 7.0, 8.0, 11.0]
-dllAlphaArray=[3.5, 4.5, 5.5, 7.0, 9.0]
-fheArray=[0.0010, 0.005, 0.01]
-fheAlphaArray=[0.7, 2.0, 5.0]
-product=itertools.product(range(0,5), repeat=3)
+lens=len(sourceArray)
+sourceAlphaArray=[-10.0, -12.0, -14.5]
+lensa=len(sourceAlphaArray)
+dllArray=[4.5, 5.5, 6.5,  7.0, 8.0]
+lend=len(dllArray)
+dllAlphaArray=[2.5, 3.5, 4.5]
+lenda=len(dllAlphaArray)
+fheArray=[0.0011, 0.0020, 0.0030]
+lenf=len(fheArray)
+fheAlphaArray=[3.5, 5.0, 7.0]
+lenfa=len(fheAlphaArray)
+runs=lens*lensa*lend*lenda*lenf*lenfa
+product=itertools.product(range(0,lens), range(0,lensa), range(0,lend), range(0,lenda), range(0,lenf), range(0,lenfa))
 for index in product:
     run="run-"+str(index)
+    source=sourceArray[index[0]]
+    sourceAlpha=sourceAlphaArray[index[1]]
+    dll=dllArray[index[2]]
+    dllAlpha=dllAlphaArray[index[3]]
+    fhe=fheArray[index[4]]
+    fheAlpha=fheAlphaArray[index[5]]
     if(not os.path.exists("./"+run)): print "BAD", run
     O=copy.deepcopy(E)
     outputs=[]
@@ -135,14 +148,14 @@ for index in product:
       PuvChi=PuvFit(Puv)
       chis.append((chis[3] + chis[5] + 12.0*PuvChi )/35.0)
       outputLine = ""
-      outputLine = outputLine + str(sourceArray[index[0]]) + "e28" + ' , '
-      outputLine = outputLine + str(-13.5) + ' , '
-      outputLine = outputLine + str(dllArray[index[1]]) + "e-7" + ' , '
-      outputLine = outputLine + str(dllAlphaArray[index[2]]) + ' , '
-      outputLine = outputLine + str(0.0065) + ' , '
-      outputLine = outputLine + str(1.0) + ' , '
-#      out.write(outputLine)
-#      print O, '\n', E, '\n', "+++++++++++++++++++++++++++++++++++++++++++++"
+      outputLine = outputLine + str(source) + "e28" + ' , '
+      outputLine = outputLine + str(sourceAlpha) + ' , '
+      outputLine = outputLine + str(dll) + "e-7" + ' , '
+      outputLine = outputLine + str(dllAlpha) + ' , '
+      outputLine = outputLine + str(fhe) + ' , '
+      outputLine = outputLine + str(fheAlpha) + ' , '
+      outputLine = outputLine + str(Puv) + ' , '
+#      out.write(outputLine#      print O, '\n', E, '\n', "+++++++++++++++++++++++++++++++++++++++++++++"
       output(outputLine, chis, filenames)
 #  outputSpace(filenames)
 #  out=open("chi.dat", 'a')

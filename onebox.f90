@@ -115,6 +115,7 @@ subroutine model()
 !  net_source= (source/((6.0**source_exp)*(source_exp+1.0)*(dr/Rj)))*((rdist+(dr/Rj))**(source_exp+1.0) - (rdist**(source_exp+1.0)))
   call MPI_ALLREDUCE(net_source, source_tot, 1, MPI_REAL, MPI_SUM, MPI_COMM_WORLD, ierr)
   var=net_source
+  if (mype .eq. 0) print *, "Source correction coefficient : ", source/source_tot
   net_source=net_source*(source/source_tot)
 !  if (mype .eq. 0) then
 !    print*, "TOTAL SOURCE", var, net_source, source_tot, volume, net_source/volume
@@ -236,10 +237,10 @@ subroutine model()
 !call MPI_BARRIER(MPI_COMM_WORLD, ierr)
 do i=1, npes-1
   if(mype .eq. i) then
-    open(unit=320, file='AllSource.dat', status='old', position='append')
+    open(unit=320, file='AllSource.dat', status='unknown', position='append')
       write(320,*) rdist, net_source/(ROOTPI*Rj*1e5*.5)  
     close(320)
-    open(unit=330, file='AllTrans.dat', status='old', position='append')
+    open(unit=330, file='AllTrans.dat', status='unknown', position='append')
       write(330,*) rdist, v_r0*dt/dr
     close(330)
   endif
@@ -310,7 +311,7 @@ enddo
 !      print *, "((((((((((((((((((( i = ", i, " )))))))))))))))))))"
 !    endif
     tm = tm0 + (i-1) * dt / 86400.0
-    if( mype .eq. 0) print*, tm
+!    if( mype .eq. 0) print*, tm
 !if(mype .eq. 6) print *, n%s2p
     var =exp(-((tm-neutral_t0)/neutral_width)**2)
 

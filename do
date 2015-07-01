@@ -1,9 +1,9 @@
 #!/bin/bash
 
 lng=1
-rad=37
+rad=18
 npes=$(($rad * $lng))
-days=10
+days=100
 
 ./changeDimension.sh $rad $lng
 
@@ -64,6 +64,8 @@ if [ $? -eq 0 ]
 #      mv misc.mpeg ../misc.mpeg
 
     cd ..
+ 
+    python chi.py
 
     ./plots/mixRatio.sh $days
 
