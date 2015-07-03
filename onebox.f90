@@ -82,6 +82,7 @@ subroutine model()
   end do
 
   if( vrad ) v_ion=4.0-abs(rdist-6.8)
+  if( .not. vrad .and. .not. vmass) v_ion=1.0
   if( vrad .and. v_ion .lt. 0.0 ) v_ion=0.0
 
   call readInputs()  !call to input.f90 module to read initial variables from 'input.dat'

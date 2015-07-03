@@ -105,15 +105,11 @@ outputs=[]
 filenames=["elecDens", "sp", "o2p", "sp", "s2p", "s3p", "NL2", "elecTemp", "Tot"] 
 run="plots/data"
 runlog=open("runlog", 'a')
-debug=open("debug.dat", 'w')
 if(not os.path.exists("./"+run)): print "BAD", run
 O=copy.deepcopy(E)
 outputs=[]
 if(getOutput(outputs, run) and os.path.exists("./"+run)):
   O=modifyOutput(outputs, O)
-  debug.write(str(O[3]) + '\n' + "" + '\n')
-  debug.write(str(E[3]) + '\n' + "" + '\n')
-  debug.write(str(sig[3]))
   chis=calculateChi(O, E, sig)
   Puv=getPuv(run)
   PuvChi=PuvFit(Puv)
@@ -122,5 +118,4 @@ if(getOutput(outputs, run) and os.path.exists("./"+run)):
   outputLine = "CHI SQUARED "
   output(outputLine, chis, filenames)
 
-debug.close()
 runlog.close()

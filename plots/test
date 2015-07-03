@@ -2,709 +2,280 @@ set terminal jpeg
 set logscale y
 set key below
 set size 1, 1
-set xlabel 'Radial Distance(Rj)'
-set ylabel 'TEMP'
-set xrange [6.0:12.0]
-set xtics 1.0
+set xlabel 'System III Longitude'
+set ylabel 'DENS'
+set yrange [1:10000]
+set xrange [0:360.0]
+set xtics 45
 set grid ytics
 set grid xtics
 set title 'Temporal Variability of Flux Tube Content (001)'
 set output 'gplot001.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0001rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0001rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0001rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0001rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0001rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0001_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0001_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0001_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0001_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0001_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0001_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0001_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (002)'
 set output 'gplot002.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0002rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0002rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0002rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0002rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0002rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0002_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0002_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0002_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0002_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0002_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0002_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0002_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (003)'
 set output 'gplot003.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0003rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0003rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0003rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0003rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0003rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0003_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0003_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0003_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0003_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0003_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0003_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0003_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (004)'
 set output 'gplot004.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0004rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0004rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0004rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0004rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0004rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0004_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0004_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0004_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0004_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0004_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0004_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0004_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (005)'
 set output 'gplot005.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0005rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0005rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0005rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0005rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0005rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0005_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0005_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0005_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0005_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0005_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0005_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0005_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (006)'
 set output 'gplot006.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0006rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0006rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0006rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0006rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0006rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0006_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0006_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0006_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0006_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0006_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0006_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0006_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (007)'
 set output 'gplot007.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0007rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0007rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0007rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0007rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0007rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0007_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0007_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0007_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0007_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0007_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0007_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0007_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (008)'
 set output 'gplot008.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0008rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0008rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0008rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0008rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0008rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0008_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0008_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0008_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0008_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0008_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0008_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0008_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (009)'
 set output 'gplot009.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0009rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0009rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0009rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0009rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0009rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0009_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0009_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0009_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0009_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0009_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0009_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0009_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (010)'
 set output 'gplot010.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0010rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0010rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0010rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0010rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0010rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0010_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0010_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0010_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0010_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0010_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0010_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0010_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (011)'
 set output 'gplot011.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0011rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0011rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0011rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0011rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0011rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0011_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0011_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0011_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0011_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0011_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0011_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0011_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (012)'
 set output 'gplot012.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0012rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0012rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0012rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0012rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0012rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0012_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0012_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0012_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0012_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0012_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0012_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0012_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (013)'
 set output 'gplot013.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0013rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0013rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0013rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0013rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0013rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0013_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0013_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0013_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0013_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0013_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0013_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0013_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (014)'
 set output 'gplot014.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0014rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0014rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0014rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0014rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0014rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0014_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0014_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0014_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0014_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0014_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0014_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0014_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (015)'
 set output 'gplot015.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0015rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0015rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0015rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0015rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0015rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0015_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0015_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0015_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0015_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0015_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0015_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0015_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (016)'
 set output 'gplot016.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0016rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0016rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0016rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0016rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0016rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0016_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0016_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0016_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0016_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0016_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0016_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0016_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (017)'
 set output 'gplot017.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0017rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0017rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0017rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0017rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0017rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0017_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0017_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0017_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0017_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0017_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0017_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0017_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (018)'
 set output 'gplot018.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0018rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0018rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0018rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0018rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0018rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0018_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0018_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0018_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0018_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0018_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0018_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0018_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (019)'
 set output 'gplot019.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0019rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0019rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0019rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0019rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0019rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0019_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0019_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0019_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0019_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0019_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0019_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0019_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (020)'
 set output 'gplot020.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0020rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0020rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0020rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0020rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0020rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0020_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0020_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0020_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0020_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0020_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0020_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0020_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (021)'
 set output 'gplot021.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0021rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0021rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0021rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0021rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0021rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0021_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0021_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0021_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0021_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0021_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0021_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0021_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (022)'
 set output 'gplot022.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0022rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0022rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0022rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0022rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0022rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0022_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0022_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0022_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0022_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0022_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0022_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0022_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (023)'
 set output 'gplot023.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0023rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0023rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0023rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0023rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0023rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0023_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0023_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0023_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0023_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0023_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0023_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0023_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (024)'
 set output 'gplot024.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0024rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0024rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0024rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0024rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0024rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0024_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0024_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0024_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0024_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0024_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0024_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0024_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (025)'
 set output 'gplot025.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0025rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0025rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0025rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0025rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0025rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0025_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0025_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0025_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0025_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0025_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0025_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0025_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (026)'
 set output 'gplot026.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0026rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0026rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0026rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0026rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0026rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0026_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0026_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0026_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0026_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0026_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0026_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0026_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (027)'
 set output 'gplot027.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0027rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0027rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0027rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0027rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0027rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0027_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0027_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0027_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0027_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0027_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0027_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0027_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (028)'
 set output 'gplot028.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0028rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0028rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0028rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0028rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0028rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0028_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0028_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0028_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0028_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0028_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0028_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0028_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (029)'
 set output 'gplot029.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0029rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0029rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0029rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0029rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0029rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0029_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0029_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0029_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0029_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0029_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0029_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0029_1D.dat' with lines title 'Mass Loading' 
 set title 'Temporal Variability of Flux Tube Content (030)'
 set output 'gplot030.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0030rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0030rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0030rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0030rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0030rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (031)'
-set output 'gplot031.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0031rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0031rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0031rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0031rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0031rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (032)'
-set output 'gplot032.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0032rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0032rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0032rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0032rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0032rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (033)'
-set output 'gplot033.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0033rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0033rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0033rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0033rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0033rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (034)'
-set output 'gplot034.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0034rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0034rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0034rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0034rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0034rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (035)'
-set output 'gplot035.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0035rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0035rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0035rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0035rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0035rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (036)'
-set output 'gplot036.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0036rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0036rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0036rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0036rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0036rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (037)'
-set output 'gplot037.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0037rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0037rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0037rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0037rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0037rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (038)'
-set output 'gplot038.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0038rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0038rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0038rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0038rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0038rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (039)'
-set output 'gplot039.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0039rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0039rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0039rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0039rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0039rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (040)'
-set output 'gplot040.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0040rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0040rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0040rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0040rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0040rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (041)'
-set output 'gplot041.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0041rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0041rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0041rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0041rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0041rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (042)'
-set output 'gplot042.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0042rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0042rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0042rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0042rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0042rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (043)'
-set output 'gplot043.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0043rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0043rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0043rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0043rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0043rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (044)'
-set output 'gplot044.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0044rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0044rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0044rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0044rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0044rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (045)'
-set output 'gplot045.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0045rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0045rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0045rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0045rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0045rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (046)'
-set output 'gplot046.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0046rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0046rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0046rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0046rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0046rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (047)'
-set output 'gplot047.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0047rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0047rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0047rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0047rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0047rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (048)'
-set output 'gplot048.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0048rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0048rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0048rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0048rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0048rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (049)'
-set output 'gplot049.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0049rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0049rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0049rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0049rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0049rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (050)'
-set output 'gplot050.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0050rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0050rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0050rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0050rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0050rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (051)'
-set output 'gplot051.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0051rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0051rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0051rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0051rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0051rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (052)'
-set output 'gplot052.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0052rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0052rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0052rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0052rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0052rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (053)'
-set output 'gplot053.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0053rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0053rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0053rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0053rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0053rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (054)'
-set output 'gplot054.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0054rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0054rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0054rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0054rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0054rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (055)'
-set output 'gplot055.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0055rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0055rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0055rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0055rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0055rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (056)'
-set output 'gplot056.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0056rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0056rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0056rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0056rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0056rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (057)'
-set output 'gplot057.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0057rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0057rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0057rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0057rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0057rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (058)'
-set output 'gplot058.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0058rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0058rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0058rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0058rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0058rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (059)'
-set output 'gplot059.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0059rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0059rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0059rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0059rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0059rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (060)'
-set output 'gplot060.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0060rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0060rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0060rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0060rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0060rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (061)'
-set output 'gplot061.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0061rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0061rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0061rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0061rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0061rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (062)'
-set output 'gplot062.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0062rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0062rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0062rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0062rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0062rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (063)'
-set output 'gplot063.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0063rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0063rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0063rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0063rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0063rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (064)'
-set output 'gplot064.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0064rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0064rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0064rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0064rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0064rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (065)'
-set output 'gplot065.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0065rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0065rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0065rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0065rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0065rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (066)'
-set output 'gplot066.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0066rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0066rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0066rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0066rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0066rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (067)'
-set output 'gplot067.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0067rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0067rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0067rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0067rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0067rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (068)'
-set output 'gplot068.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0068rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0068rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0068rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0068rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0068rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (069)'
-set output 'gplot069.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0069rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0069rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0069rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0069rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0069rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (070)'
-set output 'gplot070.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0070rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0070rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0070rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0070rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0070rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (071)'
-set output 'gplot071.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0071rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0071rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0071rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0071rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0071rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (072)'
-set output 'gplot072.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0072rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0072rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0072rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0072rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0072rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (073)'
-set output 'gplot073.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0073rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0073rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0073rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0073rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0073rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (074)'
-set output 'gplot074.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0074rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0074rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0074rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0074rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0074rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (075)'
-set output 'gplot075.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0075rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0075rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0075rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0075rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0075rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (076)'
-set output 'gplot076.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0076rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0076rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0076rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0076rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0076rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (077)'
-set output 'gplot077.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0077rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0077rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0077rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0077rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0077rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (078)'
-set output 'gplot078.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0078rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0078rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0078rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0078rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0078rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (079)'
-set output 'gplot079.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0079rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0079rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0079rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0079rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0079rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (080)'
-set output 'gplot080.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0080rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0080rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0080rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0080rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0080rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (081)'
-set output 'gplot081.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0081rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0081rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0081rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0081rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0081rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (082)'
-set output 'gplot082.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0082rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0082rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0082rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0082rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0082rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (083)'
-set output 'gplot083.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0083rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0083rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0083rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0083rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0083rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (084)'
-set output 'gplot084.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0084rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0084rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0084rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0084rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0084rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (085)'
-set output 'gplot085.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0085rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0085rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0085rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0085rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0085rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (086)'
-set output 'gplot086.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0086rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0086rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0086rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0086rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0086rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (087)'
-set output 'gplot087.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0087rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0087rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0087rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0087rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0087rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (088)'
-set output 'gplot088.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0088rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0088rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0088rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0088rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0088rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (089)'
-set output 'gplot089.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0089rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0089rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0089rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0089rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0089rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (090)'
-set output 'gplot090.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0090rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0090rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0090rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0090rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0090rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (091)'
-set output 'gplot091.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0091rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0091rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0091rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0091rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0091rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (092)'
-set output 'gplot092.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0092rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0092rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0092rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0092rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0092rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (093)'
-set output 'gplot093.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0093rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0093rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0093rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0093rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0093rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (094)'
-set output 'gplot094.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0094rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0094rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0094rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0094rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0094rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (095)'
-set output 'gplot095.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0095rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0095rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0095rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0095rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0095rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (096)'
-set output 'gplot096.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0096rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0096rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0096rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0096rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0096rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (097)'
-set output 'gplot097.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0097rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0097rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0097rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0097rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0097rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (098)'
-set output 'gplot098.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0098rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0098rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0098rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0098rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0098rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (099)'
-set output 'gplot099.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0099rad.dat'  with lines title 'Sulfur + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0099rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0099rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0099rad.dat'  with lines title 'Oxygen + (II)'  ,  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0099rad.dat' with lines title 'Oxygen ++ (III)' 
-set title 'Temporal Variability of Flux Tube Content (100)'
-set output 'gplot100.jpeg'
-plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/TEMP/TEMPsp0100rad.dat'  with lines title 'Sulfur + (II)',    \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/TEMP/TEMPs2p0100rad.dat' with lines title 'Sulfur ++ (III)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/TEMP/TEMPs3p0100rad.dat' with lines title 'Sulfur +++ (IV)',  \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/TEMP/TEMPop0100rad.dat'  with lines title 'Oxygen + (II)',    \
-     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/TEMP/TEMPo2p0100rad.dat' with lines title 'Oxygen ++ (III)' 
+plot '/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/DENS/DENSsp0030_1D.dat'  with lines title 'Sulfur + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s2p/DENS/DENSs2p0030_1D.dat' with lines title 'Sulfur ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/s3p/DENS/DENSs3p0030_1D.dat' with lines title 'Sulfur +++ (IV)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/op/DENS/DENSop0030_1D.dat'  with lines title 'Oxygen + (II)'  ,  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/o2p/DENS/DENSo2p0030_1D.dat' with lines title 'Oxygen ++ (III)',  \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/elec/DENS/DENSelec0030_1D.dat' with lines title 'Electrons',        \
+     '/home/mrcopper/Desktop/Project/2D_Model/plots/data/LOAD/LOAD0030_1D.dat' with lines title 'Mass Loading' 

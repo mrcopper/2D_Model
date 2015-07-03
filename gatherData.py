@@ -33,15 +33,15 @@ npes=lng*rad
 os.popen("./changeDimension.sh "+ str(rad) + " " + str(lng))
 os.popen("make clean")
 os.popen("make all")
-sourceArray=[1.0, 2.5, 3.0, 3.5, 5.0]
+sourceArray=[5.0, 6.0, 7.0, 8.0, 10.0]
 lens=len(sourceArray)
-sourceAlphaArray=[-10.0, -12.0, -14.5]
+sourceAlphaArray=[-12.0, -14.5]
 lensa=len(sourceAlphaArray)
-dllArray=[4.5, 5.5, 6.5,  7.0, 8.0]
+dllArray=[6.5, 8.0, 9.5, 11.0, 15.0]
 lend=len(dllArray)
-dllAlphaArray=[2.5, 3.5, 4.5]
+dllAlphaArray=[3.5, 4.5, 5.5]
 lenda=len(dllAlphaArray)
-fheArray=[0.0011, 0.0020, 0.0030]
+fheArray=[0.0020, 0.0030]
 lenf=len(fheArray)
 fheAlphaArray=[3.5, 5.0, 7.0]
 lenfa=len(fheAlphaArray)

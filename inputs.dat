@@ -23,5 +23,5 @@
 0.00                  s value for upwind scheme
 0.030                 initial radial velocity (km/s)
 5.0                   velocity exponent
-5                    transport iterations per chemistry iteration
-5000.0                dt for chemistry
+2                     transport iterations per chemistry iteration
+2000.0                dt for chemistry

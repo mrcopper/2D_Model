@@ -38,8 +38,8 @@ MODULE DEBUG
   logical             ::UseLaxWendroff = .true. !Uses upwind scheme to handle transport (fast)
   logical             ::Upwind = .not. .true. !Uses upwind scheme to handle transport (fast)
   logical             ::Euler  = .not. .true. !Uses Improved euler method to determine transport (slow)
-  logical             ::sys3hot  = .not. .true. !creates a hot electron population that is stationary in sys3
-  logical             ::sys4hot  = .not. .true. !creates a hot electron population that is mobile in sys3
+  logical             ::sys3hot  = .true. !creates a hot electron population that is stationary in sys3
+  logical             ::sys4hot  = .true. !creates a hot electron population that is mobile in sys3
   logical             ::vrad     = .true. !creates a hot electron population that is mobile in sys3
   logical             ::vmass    = .not. .true. !creates a hot electron population that is mobile in sys3
 

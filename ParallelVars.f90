@@ -22,7 +22,7 @@ MODULE PARALLELVARIABLES
 
   parameter(v_Io=57.0)                !in km/s
   parameter(v_neutral=57.0)           !in km/s 57 is default
-!  parameter(v_ion=1.0)                !in km/s
+! parameter(v_ion=1.0)                !in km/s
   parameter(v_sys4=1.05)              !in km/s (1.05 corresponds to 12.5 degrees/day at 6 Rj)
   parameter(sys4_amp=0.40)            !amplification factor for moving hot electron populatioN
   parameter(sys3_amp=0.30)            !amplification for stationary (sys 3) hot electrons

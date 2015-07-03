@@ -44,7 +44,8 @@ echo '                      8 "#7f0000")'>>$FILE
 #if [ $2 -eq "DENS" ]
 #then
 #  echo "This part works"
-#  echo "set yrange [0:500]"                                    >>$FILE
+  echo "set yrange [-10.25:10.25]"                                    >>$FILE
+  echo "set xrange [-10.25:10.25]"                                    >>$FILE
 #  echo "set ytics 50"                                         >>$FILE
 #fi
 
@@ -84,7 +85,7 @@ mencoder -nosound -really-quiet -ovc lavc -lavcopts \
   -vf scale=640:480 -mf type=jpeg:fps=10 \
   mf://@list.dat -o animated.mpeg
 
-mv gplot*"$i".jpeg 3dlast.jpeg
+#mv gplot*"$i".jpeg 3dlast.jpeg
 
 #mv gplot*.jpeg ../"$species"*.jpeg
 rm gplot*.jpeg

@@ -115,15 +115,15 @@ out=open("chi.dat", 'w')
 #for i in range(0, len(dll)) :
 # # for dll in {3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 15.0, 18.0}:
 #  for j in range(0, len(s)) : #take from gatherData.py that generated the data
-sourceArray=[1.0, 2.5, 3.0, 3.5, 5.0]
+sourceArray=[5.0, 6.0, 7.0, 8.0, 10.0]
 lens=len(sourceArray)
-sourceAlphaArray=[-10.0, -12.0, -14.5]
+sourceAlphaArray=[-12.0, -14.5]
 lensa=len(sourceAlphaArray)
-dllArray=[4.5, 5.5, 6.5,  7.0, 8.0]
+dllArray=[6.5, 8.0, 9.5, 11.0, 15.0]
 lend=len(dllArray)
-dllAlphaArray=[2.5, 3.5, 4.5]
+dllAlphaArray=[3.5, 4.5, 5.5]
 lenda=len(dllAlphaArray)
-fheArray=[0.0011, 0.0020, 0.0030]
+fheArray=[0.0020, 0.0030]
 lenf=len(fheArray)
 fheAlphaArray=[3.5, 5.0, 7.0]
 lenfa=len(fheAlphaArray)
