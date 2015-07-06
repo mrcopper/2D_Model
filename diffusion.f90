@@ -120,7 +120,7 @@ subroutine transport_species(nl2b, nl2, dll, lp, lflux, nl2e, tbout, tbin, nl2ou
   logical            ::isNan
   integer            ::i
 
-  dt_trans=dt/(trans_it*1.0)
+  dt_trans=dt/(radtrans_it*1.0)
   !if(mype .eq. 0) print *, dt_trans
   nl2b=nl2
   nl2bout=GetShiftDouble(nl2b,-1)

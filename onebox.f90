@@ -724,13 +724,15 @@ subroutine Grid_transport(n, T, nrg, dep, h, nl2, nl2e)
 !  dll0=4.2E-8 !4.2E-7
 !  dlla=4.6
 
-  call az_transport(n, nrg)
+  do i=1, aztrans_it
+    call az_transport(n, nrg)
+  enddo
   isNaN=NaNcatch(n%sp, -1, mype)
   nl2=NLsquared(n, T, nl2e, h)
 !  if(mype .eq. 0) print*, n%sp, n%s2p, n%s3p, n%op, n%o2p
 !  if(mype .eq. 0) print*, nl2%sp, nl2%s2p, nl2%s3p, nl2%op, nl2%o2p
   isNaN=NaNcatch(nl2%sp, 0, mype)
-  do i=1, trans_it
+  do i=1, radtrans_it
     call transport_nl2(nl2, nl2e, dll0, dlla)
 !    if(mype .eq. 0) print *, i 
   enddo
@@ -767,11 +769,13 @@ subroutine az_transport(n, nrg)
   type(density)     ::n
   type(nT)          ::nrg
   real              ::cleft, cright, cn, c
-  cn=numerical_c_neutral
-  c=numerical_c_ion
+  cn=numerical_c_neutral*aztrans_it
+  c=numerical_c_ion*aztrans_it
 
   if(UseLaxWendroff) then
     call GetAzNeighbors(n, nrg, cleft, cright)
+    cleft=cleft*aztrans_it
+    cright=cright*aztrans_it
     n%s=LaxWendroff(nleft%s, n%s, nright%s, cn, cn, cn)
     n%sp=LaxWendroff(nleft%sp, n%sp, nright%sp, cleft, c, cright)
     n%s2p=LaxWendroff(nleft%s2p, n%s2p, nright%s2p, cleft, c, cright)

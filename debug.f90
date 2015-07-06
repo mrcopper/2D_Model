@@ -35,13 +35,13 @@ MODULE DEBUG
   logical             ::moving_Io = .not. .true. !turns the motion of Io on and off 
   logical             ::test_pattern = .not. .true. !allows for testing azimuthal source patterns
 !  logical             ::test_pattern = .true. !allows for testing azimuthal source patterns
-  logical             ::UseLaxWendroff = .true. !Uses upwind scheme to handle transport (fast)
-  logical             ::Upwind = .not. .true. !Uses upwind scheme to handle transport (fast)
+  logical             ::UseLaxWendroff = .true. !Uses Lax Wendroffd scheme to handle azimuthal transport (fast, less diffusive))
+  logical             ::Upwind = .not. .true. !Uses upwind scheme to handle azimuthal transport (fast, diffusive)
   logical             ::Euler  = .not. .true. !Uses Improved euler method to determine transport (slow)
   logical             ::sys3hot  = .true. !creates a hot electron population that is stationary in sys3
   logical             ::sys4hot  = .true. !creates a hot electron population that is mobile in sys3
-  logical             ::vrad     = .true. !creates a hot electron population that is mobile in sys3
-  logical             ::vmass    = .not. .true. !creates a hot electron population that is mobile in sys3
+  logical             ::vrad     = .true. !azimuthal plasma subcorotation velocity has radial profile when true
+  logical             ::vmass    = .not. .true. !when true, subcorotation is described by Pontius equation
 
   CONTAINS
 

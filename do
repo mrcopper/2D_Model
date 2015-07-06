@@ -76,8 +76,6 @@ if [ $? -eq 0 ]
   echo "Run Complete"
 fi
 
-paplay --volume=65000 /usr/share/sounds/KDE-Im-Message-In.ogg
-
 #gifview -a dens.gif &
 #mplayer -loop -0 dens.avi &
 #vlc intensity.avi &

@@ -13,7 +13,7 @@ real                  ::hote_amp, hote_t0, hote_width, run_days
 real                  ::per_day, expv_r0, fehot_exp
 real                  ::IN_LIM, OUT_LIM, reac_off_dist
 real                  ::dll0, dlla
-integer               ::trans_it
+integer               ::radtrans_it, aztrans_it !radial and azimuthal transport subcycle iterations
 real                  ::dt_input
 
 CONTAINS
@@ -46,7 +46,8 @@ subroutine readInputs()
   read(100,*) numerical_s
   read(100,*) v_r0
   read(100,*) expv_r0
-  read(100,*) trans_it
+  read(100,*) radtrans_it
+  read(100,*) aztrans_it
   read(100,*) dt_input
 
   close(100)
