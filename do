@@ -3,7 +3,7 @@
 lng=12
 rad=18
 npes=$(($rad * $lng))
-days=30
+days=100
 
 ./changeDimension.sh $rad $lng
 
@@ -33,11 +33,9 @@ if [ $? -eq 0 ]
 
       ./3Dplots $days MIXR sp
       mv animated.mpeg ../3dspplot.mpeg
-      mv 3dlast.jpeg ../3dspplot.jpeg
 
       ./3Dplots $days MIXR s3p
       mv animated.mpeg ../3ds3pplot.mpeg
-      mv 3dlast.jpeg ../3ds3pplot.jpeg
 
 #      ./3Dplots $days VSUB .
 #      mv animated.mpeg ../3dVelPlot.mpeg

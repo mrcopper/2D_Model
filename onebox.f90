@@ -225,28 +225,17 @@ subroutine model()
   if(mype+LNG_GRID<npes) call MPI_SEND(numerical_c_r, 1, MPI_DOUBLE_PRECISION, mype+LNG_GRID, 22, MPI_COMM_WORLD, ierr)
   if(mype-LNG_GRID.ge.0) call MPI_RECV(numerical_c_rin, 1, MPI_DOUBLE_PRECISION, mype-LNG_GRID, 22, MPI_COMM_WORLD, stat, ierr)
 
-!    write(*,*) rdist, net_source/(ROOTPI*Rj*1e5*.5)  
-!    write(*,*) rdist, dr/v_r0 
-!if( mype .eq. 0 ) then 
-!  open(unit=320, file='AllSource.dat', status='replace', position='append')
-!    write(320,*) rdist, net_source/(ROOTPI*Rj*1e5*.5)  
-!  close(320)
-!  open(unit=330, file='AllTrans.dat', status='replace', position='append')
-!    write(330,*) rdist, dr/v_r0  
-!  close(330)
-!endif
-!call MPI_BARRIER(MPI_COMM_WORLD, ierr)
-do i=1, npes-1
-  if(mype .eq. i) then
-    open(unit=320, file='AllSource.dat', status='unknown', position='append')
-      write(320,*) rdist, net_source/(ROOTPI*Rj*1e5*.5)  
-    close(320)
-    open(unit=330, file='AllTrans.dat', status='unknown', position='append')
-      write(330,*) rdist, v_r0*dt/dr
-    close(330)
-  endif
-  call MPI_BARRIER(MPI_COMM_WORLD, ierr)
-enddo
+!do i=1, npes-1
+!  if(mype .eq. i) then
+!    open(unit=320, file='AllSource.dat', status='unknown', position='append')
+!      write(320,*) rdist, net_source/(ROOTPI*Rj*1e5*.5)  
+!    close(320)
+!    open(unit=330, file='AllTrans.dat', status='unknown', position='append')
+!      write(330,*) rdist, v_r0*dt/dr
+!    close(330)
+!  endif
+!  call MPI_BARRIER(MPI_COMM_WORLD, ierr)
+!enddo
 
 !  transport = (v_r0/dr)*86400.0 
 !  transport = transport * (6.0/rdist)**5.6
