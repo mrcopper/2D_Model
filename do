@@ -1,7 +1,7 @@
 #!/bin/bash
 
 lng=12
-rad=18
+rad=8
 npes=$(($rad * $lng))
 days=100
 

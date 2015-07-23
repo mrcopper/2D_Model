@@ -149,6 +149,7 @@ subroutine model()
   test_multiplier=1.0
   if( test_pattern ) then
 !!    if( rdist .gt. 7.0 .and. rdist .lt. 9.0) test_multiplier=4.0
+    test_multiplier=1.0+0.5*cos((longitude-110.0)*PI/180.0)
   endif
 
 !  n%sp = 0.060 * const * test_multiplier* (rdist/6.0)**(-8.0)
@@ -287,7 +288,7 @@ subroutine model()
 
   output_it = 0 !This variable determine when data is output. 
   Io_loc=0      !Io's location in the torus
-  sys4_loc=0    !The location of the sys4 hot electron population
+  sys4_loc=(110.0/360.0)*torus_circumference    !The location of the sys4 hot electron population
   file_num=0    !Output files are numbered so they can be assembled as a animated visualization (refer to scripts)
 
   nl2=NLsquared(n, T, nl2e, h)

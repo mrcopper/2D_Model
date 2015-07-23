@@ -1,4 +1,4 @@
- Source correction coefficient :   0.3679169    
+ Source correction coefficient :   5.5747163E-02
  AVERAGE VALUES
  $$--------------------------------
  $$ INPUT PARAMETERS
@@ -7,7 +7,7 @@
  $$ Hot Elec Fraction....  2.0000001E-03
  $$ Transport............  0.0000000E+00
  $$ Hot Elec Temp........   42.00000    
- $$ Subcorotation........  0.0000000E+00
+ $$ Subcorotation........   1.000000    
  $$ Sys 3 Hot Elec Frac..  0.3000000    
  $$ Sys 4 Hot Elec Amp...  0.4000000    
  $$ Sys 4 Speed..........   1.050000    
@@ -26,25 +26,15 @@
  $$--------------------------------
  $$ IN-CODE ENERGY BUDGET
  $$--------------------------------
- $$ ionized S............  0.8670751    
- $$ ionized O............  0.2545089    
- $$ charge exchange S....  0.2615405    
- $$ charge exchange O....  0.4637296    
- $$ equil with ehot......  0.1630567    
- $$ total in.............   2.009911    
- $$ puv..................   1.573142    
- $$ fast/ena.............  0.7577157    
- $$ transport............   2.489191    
- $$ total out............   4.820049    
- $$ in/out...............  0.4169897    
+ $$ ionized S............  0.3823713    
+ $$ ionized O............  0.1130959    
+ $$ charge exchange S....  0.1120119    
+ $$ charge exchange O....  0.1988624    
+ $$ equil with ehot......  0.1863914    
+ $$ total in.............  0.9927329    
+ $$ puv..................   13.92279    
+ $$ fast/ena.............  0.5067187    
+ $$ transport............  0.4668413    
+ $$ total out............   2.133792    
+ $$ in/out...............  0.4652435    
  
-CHI SQUARED elecDens : 7.02720957484
-CHI SQUARED sp : 111.403744287
-CHI SQUARED o2p : 129.853876274
-CHI SQUARED sp : 144.89165061
-CHI SQUARED s2p : 147.971108856
-CHI SQUARED s3p : 201.884039884
-CHI SQUARED NL2 : 463.150636043
-CHI SQUARED elecTemp : 477.095229825
-CHI SQUARED Tot : 10.2784573216
-CHI SQUARED Puv : 1.08085964674
