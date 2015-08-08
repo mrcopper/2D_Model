@@ -35,8 +35,9 @@ def Transport(path, dll0, s):
   for i in range(1, 10):
     line=inputs.readline()
   #print path+"/inputs.dat", line
+  [dll0, junk]=line.split(" ", 1)
 
-  dll0=float(line)
+  dll0=float(dll0)
 
 #print dll0
 

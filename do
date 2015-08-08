@@ -1,9 +1,9 @@
 #!/bin/bash
 
-lng=12
-rad=8
+lng=18
+rad=12
 npes=$(($rad * $lng))
-days=100
+days=500
 
 ./changeDimension.sh $rad $lng
 
@@ -37,8 +37,8 @@ if [ $? -eq 0 ]
       ./3Dplots $days MIXR s3p
       mv animated.mpeg ../3ds3pplot.mpeg
 
-#      ./3Dplots $days VSUB .
-#      mv animated.mpeg ../3dVelPlot.mpeg
+      ./3Dplots $days VSUB .
+      mv animated.mpeg ../3dVelPlot.mpeg
 
       ./radialplots $days DENS
       mv animated.mpeg ../raddens.mpeg

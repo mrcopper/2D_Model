@@ -81,8 +81,8 @@ subroutine model()
     lat%z(i)= (i-1) * Rj / 10.0  !Initializing lat%z
   end do
 
-  if( vrad ) v_ion=4.0-abs(rdist-6.8)
-  if( .not. vrad .and. .not. vmass) v_ion=1.0
+  if( vrad ) v_ion=1.0-abs(rdist-6.8)
+  if( .not. vrad .and. .not. vmass) v_ion=2.0
   if( vrad .and. v_ion .lt. 0.0 ) v_ion=0.0
 
   call readInputs()  !call to input.f90 module to read initial variables from 'input.dat'
@@ -135,10 +135,10 @@ subroutine model()
   numerical_c_ion = v_ion*dt/dx
 
 !set sys3 longitude of box
-  lon3=110
+  lon3=200
 
 !set zoff
-  zoff= abs(0.0* cos((lon3-longitude) * dTOr) * dTOr * rdist * Rj) !in km
+  zoff= abs(6.0* cos((lon3-longitude) * dTOr) * dTOr * rdist * Rj) !in km
   n_height = Rj/2.0
 
   tm0=0.00
@@ -149,7 +149,7 @@ subroutine model()
   test_multiplier=1.0
   if( test_pattern ) then
 !!    if( rdist .gt. 7.0 .and. rdist .lt. 9.0) test_multiplier=4.0
-    test_multiplier=1.0+0.5*cos((longitude-110.0)*PI/180.0)
+    test_multiplier=1.0+0.2*cos((longitude-110.0)*PI/180.0)
   endif
 
 !  n%sp = 0.060 * const * test_multiplier* (rdist/6.0)**(-8.0)
@@ -331,7 +331,7 @@ subroutine model()
     elecHot_multiplier=1.0
 
     if( sys3hot ) then
-      elecHot_multiplier=elecHot_multiplier+sys3_amp*(sin((lon3-longitude)*dTOr))
+      elecHot_multiplier=elecHot_multiplier+sys3_amp*(cos((290.0-longitude)*dTOr))
     endif
 
     if( sys4hot ) then
@@ -372,7 +372,6 @@ subroutine model()
     else
 
       mass_loading(mype+1)=0.0
-      miscOutput=0.0
 
     end if
 
@@ -396,7 +395,7 @@ subroutine model()
     if( rdist < reac_off_dist ) then
        smooth=all_loading(int((mype+1)/LNG_GRID)*LNG_GRID+MOD(mype,LNG_GRID)+1)
 !       if( mype .eq. 8) print *, smooth, int((mype+1)/LNG_GRID)*LNG_GRID+MOD(mype,LNG_GRID)+1
-       do k=1, 2
+       do k=1, 1
          smooth=smooth+all_loading(int((mype+1)/LNG_GRID)*LNG_GRID+MOD(mype+k,LNG_GRID)+1)
          smooth=smooth+all_loading(int((mype+1)/LNG_GRID)*LNG_GRID+MODULO(mype-k,LNG_GRID)+1)
 !         if( mype .eq. 8) print *, smooth, all_loading(abs(int((mype+1)/LNG_GRID))*LNG_GRID+MODULO(MOD(mype,LNG_GRID)-k,LNG_GRID)+1)&
@@ -409,7 +408,8 @@ subroutine model()
 !      n%fh=n%fh*((mass_loading(mype+1)/ave_loading)**(2.0)) !Should replace sys4 population.
 !      v_ion=0.0+(((mass_loading(mype+1)*volume*LNG_GRID)*57.0*(rdist)**5)/(0.8*sqrt(1.0-(1.0/(rdist)))*4.0*PI*1.5*((Rj*1.0e3)**2)*(4.2e-4)**2))
       if( vmass ) then
-        v_ion=0.0+(((smooth*volume*LNG_GRID)*57.0*(rdist)**5)/(0.2*sqrt(1.0-(1.0/(rdist)))*4.0*PI*1.5*((Rj*1.0e3)**2)*(4.2e-4)**2))
+        v_ion=0.1+(((mass_loading(mype+1)*volume*LNG_GRID)*57.0*(rdist)**5)/(0.012*sqrt(1.0-(1.0/(rdist)))*4.0*PI*1.5*((Rj*1.0e3)**2)*(4.2e-4)**2))
+        n%fh=n%fh*((mass_loading(mype+1)/ave_loading)**(15.0)) !Should replace sys4 population.
       endif
     end if
     numerical_c_ion = v_ion*dt/dx
@@ -429,6 +429,7 @@ subroutine model()
     call energyBudget(n, h, T, dep, ind, ft, lat, v, nrgy)
 
     if (nint(output_it)+1 .eq. i .and. (OUTPUT_MIXR .or. OUTPUT_DENS .or. OUTPUT_TEMP .or. OUTPUT_INTS)) then !Output at set intervals when OUTPUT_MIX is true (from debug.f90)
+        miscOutput=mass_loading(mype+1)
         day = (i-1.0)*dt/86400
         write (x1, '(I4.4)') file_num
         day_char=trim(x1)  !trim non-existent file and store as day_char

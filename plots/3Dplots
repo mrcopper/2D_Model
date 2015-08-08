@@ -27,7 +27,7 @@ echo 'set view map'                                          >>$FILE
 #echo 'set palette model RGB'                                          >>$FILE
 echo 'set angle degrees'                                     >>$FILE
 #echo 'set zrange [0.01:0.2]'                                 >>$FILE
-echo 'set cbrange [0.01:0.05]'                                >>$FILE
+echo 'set cbrange [.02:.12]'                                >>$FILE
 echo 'set pm3d implicit interpolate 0,0'                >>$FILE
 #echo 'set pm3d implicit at b interpolate 0,0'                >>$FILE
 echo 'set palette defined ( 0 "#000090",\'>>$FILE
