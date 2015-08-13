@@ -82,7 +82,7 @@ subroutine model()
   end do
 
   if( vrad ) v_ion=1.0-abs(rdist-6.8)
-  if( .not. vrad .and. .not. vmass) v_ion=2.0
+  if( .not. vrad .and. .not. vmass) v_ion=1.0
   if( vrad .and. v_ion .lt. 0.0 ) v_ion=0.0
 
   call readInputs()  !call to input.f90 module to read initial variables from 'input.dat'
@@ -718,6 +718,7 @@ subroutine Grid_transport(n, T, nrg, dep, h, nl2, nl2e)
   do i=1, aztrans_it
     call az_transport(n, nrg)
   enddo
+  call update_temp(n, nrg, T)
   isNaN=NaNcatch(n%sp, -1, mype)
   nl2=NLsquared(n, T, nl2e, h)
 !  if(mype .eq. 0) print*, n%sp, n%s2p, n%s3p, n%op, n%o2p
@@ -760,13 +761,13 @@ subroutine az_transport(n, nrg)
   type(density)     ::n
   type(nT)          ::nrg
   real              ::cleft, cright, cn, c
-  cn=numerical_c_neutral*aztrans_it
-  c=numerical_c_ion*aztrans_it
+  cn=numerical_c_neutral/aztrans_it
+  c=numerical_c_ion/aztrans_it
 
   if(UseLaxWendroff) then
     call GetAzNeighbors(n, nrg, cleft, cright)
-    cleft=cleft*aztrans_it
-    cright=cright*aztrans_it
+    cleft=cleft/aztrans_it
+    cright=cright/aztrans_it
     n%s=LaxWendroff(nleft%s, n%s, nright%s, cn, cn, cn)
     n%sp=LaxWendroff(nleft%sp, n%sp, nright%sp, cleft, c, cright)
     n%s2p=LaxWendroff(nleft%s2p, n%s2p, nright%s2p, cleft, c, cright)

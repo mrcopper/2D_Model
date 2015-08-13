@@ -1,4 +1,4 @@
- Source correction coefficient :   2.8169151E-02
+ Source correction coefficient :   5.5747163E-02
  AVERAGE VALUES
  $$--------------------------------
  $$ INPUT PARAMETERS
@@ -7,9 +7,9 @@
  $$ Hot Elec Fraction....  2.0000001E-03
  $$ Transport............  0.0000000E+00
  $$ Hot Elec Temp........   42.00000    
- $$ Subcorotation........  0.7780568    
+ $$ Subcorotation........   1.000000    
  $$ Sys 3 Hot Elec Frac..  0.3000000    
- $$ Sys 4 Hot Elec Amp...  0.0000000E+00
+ $$ Sys 4 Hot Elec Amp...  0.4000000    
  $$ Sys 4 Speed..........   1.050000    
  
  $$ GAUSSIAN SOURCE CHANGE VARIABLES
@@ -26,15 +26,15 @@
  $$--------------------------------
  $$ IN-CODE ENERGY BUDGET
  $$--------------------------------
- $$ ionized S............  0.3016032    
- $$ ionized O............  9.3275517E-02
- $$ charge exchange S....  9.4662376E-02
- $$ charge exchange O....  0.1742858    
- $$ equil with ehot......  0.2222029    
- $$ total in.............  0.8860298    
- $$ puv..................   19.01833    
- $$ fast/ena.............  0.4291588    
- $$ transport............  0.8131416    
- $$ total out............   2.298875    
- $$ in/out...............  0.3854190    
+ $$ ionized S............  0.1922176    
+ $$ ionized O............  5.8951091E-02
+ $$ charge exchange S....  6.4349703E-02
+ $$ charge exchange O....  0.1189620    
+ $$ equil with ehot......  0.2341560    
+ $$ total in.............  0.6686364    
+ $$ puv..................   10.42570    
+ $$ fast/ena.............  0.3238476    
+ $$ transport............  0.3328085    
+ $$ total out............   1.525465    
+ $$ in/out...............  0.4383166    
  
