@@ -29,7 +29,7 @@ MODULE DEBUG
   logical             ::OUTPUT_MIXR = .true. !Variable to control outputs for plotting
   logical             ::OUTPUT_DENS = .true. !Variable to control outputs for plotting
   logical             ::OUTPUT_TEMP = .true. !Variable to control outputs for plotting
-  logical             ::OUTPUT_INTS = .true. !Variable to control outputs for plotting
+  logical             ::OUTPUT_INTS = .not. .true. !Variable to control outputs for plotting
   logical             ::OUTPUT_NL2  = .true. !Variable to control outputs for plotting
                                    ! true means plot, false means silence outputs
   logical             ::moving_Io = .not. .true. !turns the motion of Io on and off 

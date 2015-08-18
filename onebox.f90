@@ -81,10 +81,6 @@ subroutine model()
     lat%z(i)= (i-1) * Rj / 10.0  !Initializing lat%z
   end do
 
-  if( vrad ) v_ion=1.0-abs(rdist-6.8)
-  if( .not. vrad .and. .not. vmass) v_ion=1.0
-  if( vrad .and. v_ion .lt. 0.0 ) v_ion=0.0
-
   call readInputs()  !call to input.f90 module to read initial variables from 'input.dat'
 !print *, source
   call read_rec_tables()
@@ -133,6 +129,10 @@ subroutine model()
 
   numerical_c_neutral = v_neutral*dt/dx
   numerical_c_ion = v_ion*dt/dx
+
+  if( vrad ) v_ion=1.0-abs(rdist-6.8)
+  if( .not. vrad .and. .not. vmass) v_ion=1.0
+  if( vrad .and. v_ion .lt. 0.0 ) v_ion=0.0
 
 !set sys3 longitude of box
   lon3=200

@@ -1,6 +1,6 @@
 6.0	              inner boundary
 10.25                  outter boundary
-10.0                  radial distance past which chemical reactions are neglected
+12.0                  radial distance past which chemical reactions are neglected
 1.5e28                source rate
 -12.0                 source radial exponent
 2.00                  o_to_s

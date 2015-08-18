@@ -3,7 +3,7 @@ import sys
 
 radsize=int(sys.argv[1])
 latsize=int(sys.argv[2])
-radspan=9.0
+radspan=4.25
 
 def createData(path):
   infile = open(path, "r")
