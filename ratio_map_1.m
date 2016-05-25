@@ -2,13 +2,13 @@ clear all
 close all
 %format long
 %datafoldersp = dir('/home/khan/2D_Model-master/plots/data/sp/MIXR/MIXRsp*_3D.dat');
-datafoldersp = dir('/home/mrcopper/Desktop/Project/2D_Model/plots/data/sp/MIXR/*_3D.dat');
+datafoldersp = dir('/home/mrcopper/Desktop/Project/2D_Model/PaperRuns/neutral+fehAmplify/plots/data/sp/MIXR/*_3D.dat');
 %datafoldersp = dir('/home/mrcopper/Desktop/Project/2D_Model/MIXRsp*_3D.dat');
 %datafoldersp = dir('/home/mrcopper/Public/data2_0kms/sp/MIXR/*_3D.dat');
 %datafoldersp = dir('/home/khan113/runs/20x16_steady_subco_vion_1/2D_Model/plots/data/sp/MIXR/*_3D.dat');
 %datafoldersp = dir('/home/mrcopper/Public/data2_0kms/sp/MIXR/*_3D.dat');
-lng = 12;
-rad = 8;
+lng = 18;
+rad = 18;
 radial_max_data = zeros(rad,3);
 writerObj = VideoWriter('/home/mrcopper/ratio_map_1.avi');
 writerObj.FrameRate = 10;
